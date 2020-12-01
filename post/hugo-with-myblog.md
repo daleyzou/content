@@ -1,7 +1,6 @@
 ---
 title: "Hugo With Myblog"
 date: 2020-11-29T21:05:16+08:00
-draft: false
 ---
 
 
