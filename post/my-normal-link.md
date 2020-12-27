@@ -66,11 +66,19 @@ aList.remove(i--);// 索引回溯
 
 
 #### 复习java的知识点链接
+https://crossoverjie.top/JCSprout/#/soft-skills/Interview-experience
 
+https://github.com/caison/java-knowledge-mind-map
 
+https://doocs.github.io/jvm/#/
 
+https://github.com/0voice/interview_internal_reference
 
+https://github.com/doocs/advanced-java
 
+https://snailclimb.gitee.io/javaguide/#/?id=java
+
+https://cyc2018.github.io/CS-Notes/#/README
 
 
 
