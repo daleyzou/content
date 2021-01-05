@@ -12,4 +12,6 @@ https://www.runoob.com/go/go-tutorial.html
 
 https://learnku.com/go/t/24715
 
+https://books.studygolang.com/The-Golang-Standard-Library-by-Example/
+
 
