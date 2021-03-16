@@ -62,6 +62,8 @@ aList.remove(i--);// 索引回溯
 
 [ThreadLocal volatile 线程的内存模型]()
 
+[线程池](https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html)
+
 
 
 
