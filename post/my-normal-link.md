@@ -61,9 +61,6 @@ aList.remove(i--);// 索引回溯
 
 [Redis 跳跃表]()
 
-### Spring框架
-[@ASync](https://juejin.cn/post/6858854987280809997)
-
 [Redis 字符串实现](https://redisbook.readthedocs.io/en/latest/internal-datastruct/sds.html)
 
 [线程里该如何返回值 callable runnable]()
@@ -71,6 +68,9 @@ aList.remove(i--);// 索引回溯
 [ThreadLocal volatile 线程的内存模型]()
 
 [线程池](https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html)
+
+### Spring框架
+[@ASync](https://juejin.cn/post/6858854987280809997)
 
 
 
