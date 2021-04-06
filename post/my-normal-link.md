@@ -33,7 +33,11 @@ aList.remove(i--);// 索引回溯
 
 [和为定值k的子数组长度](https://blog.csdn.net/study_000/article/details/77524798)
 
+### MySQL
+
 [mysql与redis数据同步](https://www.cnblogs.com/gered/p/11737388.html)
+
+[mvcc机制](https://blog.csdn.net/qq_35190492/article/details/109044141)
 
 [异步io、NIO、AIO](https://blog.csdn.net/weixin_43122090/article/details/105462088)
 
