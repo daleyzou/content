@@ -18,12 +18,6 @@ aList.remove(i--);// 索引回溯
 
     内存屏障是个CPU指令,Java内存模型中volatile变量就是通过在写操作之后会插入一个store屏障，在读操作之前会插入一个load屏障，来实现的“禁止指令重排序”
 
-### Java知识点
-[transmittable-thread-local](https://github.com/alibaba/transmittable-thread-local/issues/123)
-
-[CAS 原子操作](https://juejin.cn/post/6844904177856937991)
-    cmpxchg指令，lock前缀指令执行时，要么锁住 “总线锁”，要么锁住 “缓存锁”，目的都是为了保证 “比较、交换” 这个复合操作的原子性
-
 
 #### java线程池
 1、[java线程池](https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html)
@@ -42,9 +36,20 @@ aList.remove(i--);// 索引回溯
 
 [mvcc机制](https://blog.csdn.net/qq_35190492/article/details/109044141)
 
+### IO
+
 [异步io、NIO、AIO](https://blog.csdn.net/weixin_43122090/article/details/105462088)
 
+### 垃圾处理
+
 [G1垃圾收集器](https://tech.meituan.com/2016/09/23/g1.html)
+
+### Java知识点
+[transmittable-thread-local](https://github.com/alibaba/transmittable-thread-local/issues/123)
+
+[CAS 原子操作](https://juejin.cn/post/6844904177856937991)
+    cmpxchg指令，lock前缀指令执行时，要么锁住 “总线锁”，要么锁住 “缓存锁”，目的都是为了保证 “比较、交换” 这个复合操作的原子性
+
 
 [volatile原理](https://zhuanlan.zhihu.com/p/77085695)
 
@@ -66,13 +71,17 @@ aList.remove(i--);// 索引回溯
 
 [从ReentrantLock的实现看AQS的原理及应用](https://tech.meituan.com/2019/12/05/aqs-theory-and-apply.html)
 
-[Redis 跳跃表]()
-
-[Redis 字符串实现](https://redisbook.readthedocs.io/en/latest/internal-datastruct/sds.html)
 
 [线程里该如何返回值 callable runnable]()
 
 [ThreadLocal volatile 线程的内存模型]()
+
+# Redis
+[Redis 跳跃表]()
+
+[Redis 字符串实现](https://redisbook.readthedocs.io/en/latest/internal-datastruct/sds.html)
+
+### 线程池
 
 [线程池](https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html)
 
