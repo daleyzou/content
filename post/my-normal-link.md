@@ -18,6 +18,9 @@ aList.remove(i--);// 索引回溯
 
     内存屏障是个CPU指令,Java内存模型中volatile变量就是通过在写操作之后会插入一个store屏障，在读操作之前会插入一个load屏障，来实现的“禁止指令重排序”
 
+### Java知识点
+[transmittable-thread-local](https://github.com/alibaba/transmittable-thread-local/issues/123)
+
 [CAS 原子操作](https://juejin.cn/post/6844904177856937991)
     cmpxchg指令，lock前缀指令执行时，要么锁住 “总线锁”，要么锁住 “缓存锁”，目的都是为了保证 “比较、交换” 这个复合操作的原子性
 
