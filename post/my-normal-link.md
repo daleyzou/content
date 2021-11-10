@@ -42,6 +42,8 @@ aList.remove(i--);// 索引回溯
 
 [一颗高度为3的B+树到底能存多少数据呢](https://juejin.cn/post/6973647815473889311)
 
+[myslq B+树和其他数据结构的比较](https://www.cnblogs.com/aspirant/p/9214485.html)
+
 ### IO
 
 [异步io、NIO、AIO](https://blog.csdn.net/weixin_43122090/article/details/105462088)
