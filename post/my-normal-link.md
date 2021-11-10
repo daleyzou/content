@@ -38,6 +38,8 @@ aList.remove(i--);// 索引回溯
 
 [为什么 MySQL 使用 B+ 树](https://draveness.me/whys-the-design-mysql-b-plus-tree/)
 
+[myisam vs innodb区别](https://www.runoob.com/w3cnote/mysql-different-nnodb-myisam.html)
+
 ### IO
 
 [异步io、NIO、AIO](https://blog.csdn.net/weixin_43122090/article/details/105462088)
