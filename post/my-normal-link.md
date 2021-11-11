@@ -100,6 +100,8 @@ aList.remove(i--);// 索引回溯
 ### Linux
 [IO 多路复用](https://juejin.cn/post/6882984260672847879)   [epoll](https://www.jianshu.com/p/dfd940e7fca2)
 
+### 网格通讯
+[为何TCP要三次握手，两次行不行](https://draveness.me/whys-the-design-tcp-three-way-handshake/)
 
 #### 复习java的知识点链接
 https://crossoverjie.top/JCSprout/#/soft-skills/Interview-experience
