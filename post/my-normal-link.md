@@ -97,6 +97,8 @@ aList.remove(i--);// 索引回溯
 [@ASync](https://juejin.cn/post/6858854987280809997)
 
 
+### Linux
+[IO 多路复用](https://juejin.cn/post/6882984260672847879)   [epoll](https://www.jianshu.com/p/dfd940e7fca2)
 
 
 #### 复习java的知识点链接
