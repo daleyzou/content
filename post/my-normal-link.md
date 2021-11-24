@@ -44,6 +44,8 @@ aList.remove(i--);// 索引回溯
 
 [myslq B+树和其他数据结构的比较](https://www.cnblogs.com/aspirant/p/9214485.html)
 
+[mysql 一页 16 KB](https://blog.csdn.net/LJFPHP/article/details/105318995)
+
 ### IO
 
 [异步io、NIO、AIO](https://blog.csdn.net/weixin_43122090/article/details/105462088)
