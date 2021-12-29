@@ -46,6 +46,8 @@ aList.remove(i--);// 索引回溯
 
 [mysql 一页 16 KB](https://blog.csdn.net/LJFPHP/article/details/105318995)
 
+[redo log vs undo log 区别](https://learnku.com/articles/49614)
+
 ### IO
 
 [异步io、NIO、AIO](https://blog.csdn.net/weixin_43122090/article/details/105462088)
