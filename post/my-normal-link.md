@@ -48,6 +48,8 @@ aList.remove(i--);// 索引回溯
 
 [redo log vs undo log 区别](https://learnku.com/articles/49614)
 
+[mysql redo log](https://www.cnblogs.com/ZhuChangwu/p/14096575.html)
+
 ### IO
 
 [异步io、NIO、AIO](https://blog.csdn.net/weixin_43122090/article/details/105462088)
