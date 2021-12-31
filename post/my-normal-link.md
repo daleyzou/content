@@ -95,6 +95,8 @@ aList.remove(i--);// 索引回溯
 
 [Redis 字符串实现](https://redisbook.readthedocs.io/en/latest/internal-datastruct/sds.html)
 
+[Java实现跳表](https://leetcode-cn.com/problems/design-skiplist/solution/javashou-xie-shi-xian-tiao-biao-by-feng-omdm0/)
+
 ### 线程池
 
 [线程池](https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html)
