@@ -10,3 +10,6 @@
 
 #### select、 poll、 epoll 区别
 
+#### Redis sds
+len, maloc, char[]; int 存储， 44字节紧凑存储， 大于44指针方式存储；  扩容到当前长度的2倍，大于1M就只给1M
+
