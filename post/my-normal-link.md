@@ -97,6 +97,8 @@ aList.remove(i--);// 索引回溯
 
 [Java实现跳表](https://leetcode-cn.com/problems/design-skiplist/solution/javashou-xie-shi-xian-tiao-biao-by-feng-omdm0/)
 
+[redis 用skipList , 不用 红黑树](https://juejin.cn/post/6844903446475177998)
+
 ### 线程池
 
 [线程池](https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html)
@@ -114,8 +116,11 @@ aList.remove(i--);// 索引回溯
 
 [零拷贝(Zero-copy) 浅析及其应用 ](https://www.cnblogs.com/rickiyang/p/13265043.html)
 
-### 网格通讯
+### 网络通讯
 [为何TCP要三次握手，两次行不行](https://draveness.me/whys-the-design-tcp-three-way-handshake/)
+
+### 系统
+[生成分布式ID的方法]()
 
 #### 复习java的知识点链接
 https://crossoverjie.top/JCSprout/#/soft-skills/Interview-experience
