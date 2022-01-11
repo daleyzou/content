@@ -99,6 +99,10 @@ aList.remove(i--);// 索引回溯
 
 [redis 用skipList , 不用 红黑树](https://juejin.cn/post/6844903446475177998)
 
+[redis 命令的执行过程]()
+
+[redis sds](https://redisbook.readthedocs.io/en/latest/internal-datastruct/sds.html)
+
 ### 线程池
 
 [线程池](https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html)
@@ -121,6 +125,9 @@ aList.remove(i--);// 索引回溯
 
 ### 系统
 [生成分布式ID的方法]()
+
+### 基础及算法
+[avl 红黑树](https://blog.csdn.net/wanderlustLee/article/details/81297253)
 
 #### 复习java的知识点链接
 https://crossoverjie.top/JCSprout/#/soft-skills/Interview-experience
