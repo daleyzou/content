@@ -123,6 +123,8 @@ aList.remove(i--);// 索引回溯
 ### 网络通讯
 [为何TCP要三次握手，两次行不行](https://draveness.me/whys-the-design-tcp-three-way-handshake/)
 
+[TCP连接的TIME_WAIT和CLOSE_WAIT 状态解说](https://www.cnblogs.com/kevingrace/p/9988354.html)
+
 ### 系统
 [生成分布式ID的方法]()
 
