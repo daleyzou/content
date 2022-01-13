@@ -125,6 +125,8 @@ aList.remove(i--);// 索引回溯
 
 [TCP连接的TIME_WAIT和CLOSE_WAIT 状态解说](https://www.cnblogs.com/kevingrace/p/9988354.html)
 
+[http https](https://www.runoob.com/w3cnote/http-vs-https.html)
+
 ### 系统
 [生成分布式ID的方法]()
 
