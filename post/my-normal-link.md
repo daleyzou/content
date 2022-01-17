@@ -103,6 +103,8 @@ aList.remove(i--);// 索引回溯
 
 [redis sds](https://redisbook.readthedocs.io/en/latest/internal-datastruct/sds.html)
 
+[redis通信协议](https://zhuanlan.zhihu.com/p/345327284)
+
 ### 线程池
 
 [线程池](https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html)
