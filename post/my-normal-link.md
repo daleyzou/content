@@ -50,6 +50,10 @@ aList.remove(i--);// 索引回溯
 
 [mysql redo log](https://www.cnblogs.com/ZhuChangwu/p/14096575.html)
 
+[mysql 索引类型](https://segmentfault.com/a/1190000037683781#:~:text=%E6%8C%89%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%88%86%E7%B1%BB%E5%8F%AF,%E5%A4%8D%E5%90%88%E7%B4%A2%E5%BC%95%E3%80%81%E7%BB%84%E5%90%88%E7%B4%A2%E5%BC%95%EF%BC%89%E3%80%82)
+
+[mysql 全文索引](https://zhuanlan.zhihu.com/p/35675553)
+
 ### IO
 
 [异步io、NIO、AIO](https://blog.csdn.net/weixin_43122090/article/details/105462088)
@@ -164,4 +168,6 @@ http://www.cyc2018.xyz/
 https://javaguide.cn/
 
 https://github.com/0voice/interview_internal_reference
+
+https://osjobs.net/topk/%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8/
 
