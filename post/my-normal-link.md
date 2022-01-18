@@ -105,6 +105,8 @@ aList.remove(i--);// 索引回溯
 
 [redis通信协议](https://zhuanlan.zhihu.com/p/345327284)
 
+[近似于LRU的内存淘汰策略](https://my.oschina.net/lscherish/blog/4467394)
+
 ### 线程池
 
 [线程池](https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html)
