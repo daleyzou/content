@@ -54,6 +54,10 @@ aList.remove(i--);// 索引回溯
 
 [mysql 全文索引](https://zhuanlan.zhihu.com/p/35675553)
 
+[mysql mvcc机制](https://zhuanlan.zhihu.com/p/52977862)
+
+[mysql char varchar]()
+
 ### IO
 
 [异步io、NIO、AIO](https://blog.csdn.net/weixin_43122090/article/details/105462088)
@@ -110,6 +114,8 @@ aList.remove(i--);// 索引回溯
 [redis通信协议](https://zhuanlan.zhihu.com/p/345327284)
 
 [近似于LRU的内存淘汰策略](https://my.oschina.net/lscherish/blog/4467394)
+
+[redis cluster gossip](https://segmentfault.com/a/1190000038373546)
 
 ### 线程池
 
