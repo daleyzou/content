@@ -147,6 +147,9 @@ aList.remove(i--);// 索引回溯
 ### 基础及算法
 [avl 红黑树](https://blog.csdn.net/wanderlustLee/article/details/81297253)
 
+### 消息队列
+[kafka知识点](https://www.cnblogs.com/crazymakercircle/p/14367425.html)
+
 #### 复习java的知识点链接
 https://crossoverjie.top/JCSprout/#/soft-skills/Interview-experience
 
