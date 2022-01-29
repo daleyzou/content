@@ -141,6 +141,8 @@ aList.remove(i--);// 索引回溯
 
 [http https](https://www.runoob.com/w3cnote/http-vs-https.html)
 
+[三次握手，四次挥手](https://www.eet-china.com/mp/a44399.html#:~:text=Acknowledgement%20Number%20%E7%A1%AE%E8%AE%A4%E5%BA%8F%E5%88%97%E5%8F%B7,%E6%93%8D%E6%8E%A7TCP%20%E7%8A%B6%E6%80%81%E6%9C%BA%E7%9A%84%E3%80%82)
+
 ### 系统
 [生成分布式ID的方法]()
 
