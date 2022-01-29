@@ -152,6 +152,9 @@ aList.remove(i--);// 索引回溯
 ### 消息队列
 [kafka知识点](https://www.cnblogs.com/crazymakercircle/p/14367425.html)
 
+### 一些题
+[真题1](https://blog.csdn.net/Gupaoxueyuan/article/details/104820652)
+
 #### 复习java的知识点链接
 https://crossoverjie.top/JCSprout/#/soft-skills/Interview-experience
 
