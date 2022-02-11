@@ -154,6 +154,8 @@ aList.remove(i--);// 索引回溯
 
 [zookeeper如何保证数据一致性](https://www.cnblogs.com/zz-ksw/p/12786067.html#:~:text=%E6%95%B4%E4%B8%AAZooKeeper%20%E9%9B%86%E7%BE%A4%E7%9A%84%E4%B8%80%E8%87%B4,%E9%87%8D%E6%96%B0%E8%BF%9B%E5%85%A5%E6%B6%88%E6%81%AF%E5%B9%BF%E6%92%AD%E9%98%B6%E6%AE%B5%E3%80%82)
 
+[kafka为啥使用消费者组](https://www.pianshen.com/article/27581061419/#:~:text=%E5%A6%82%E6%9E%9C%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E6%B6%88%E8%B4%B9%E8%80%85,%E6%B6%88%E8%B4%B9%E8%80%85%E7%9A%84%E6%95%85%E9%9A%9C%E5%AE%B9%E9%94%99%E3%80%82)
+
 
 
 ### 一些题
