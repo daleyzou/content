@@ -182,6 +182,8 @@ https://github.com/Jstarfish/JavaKeeper
 
 [极客时间资料](https://learn.lianglianglee.com/)
 
+https://www.pdai.tech/md/java/thread/java-thread-x-threadlocal.html
+
 
 
 ### 三年了，学习吧
