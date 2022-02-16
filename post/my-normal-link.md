@@ -66,6 +66,8 @@ aList.remove(i--);// 索引回溯
 
 [G1垃圾收集器](https://tech.meituan.com/2016/09/23/g1.html)
 
+[cms and g1](https://cloud.tencent.com/developer/article/1647637)
+
 ### Java知识点
 [transmittable-thread-local](https://github.com/alibaba/transmittable-thread-local/issues/123)
 
