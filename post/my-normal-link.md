@@ -96,6 +96,9 @@ aList.remove(i--);// 索引回溯
 [从ReentrantLock的实现看AQS的原理及应用](https://tech.meituan.com/2019/12/05/aqs-theory-and-apply.html)
 
 [threadlocal 内存泄露](https://zhuanlan.zhihu.com/p/56214714)
+
+[Java8 hashmap](https://zhuanlan.zhihu.com/p/72296421)
+
 [线程里该如何返回值 callable runnable]()
 
 [ThreadLocal volatile 线程的内存模型]()
