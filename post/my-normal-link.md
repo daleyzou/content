@@ -159,6 +159,8 @@ aList.remove(i--);// 索引回溯
 
 [kafka为啥使用消费者组](https://www.pianshen.com/article/27581061419/#:~:text=%E5%A6%82%E6%9E%9C%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E6%B6%88%E8%B4%B9%E8%80%85,%E6%B6%88%E8%B4%B9%E8%80%85%E7%9A%84%E6%95%85%E9%9A%9C%E5%AE%B9%E9%94%99%E3%80%82)
 
+[kafka时间轮算法](https://www.infoq.cn/article/erdajpj5epir65iczxzi)
+
 
 
 ### 一些题
