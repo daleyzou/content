@@ -56,6 +56,8 @@ aList.remove(i--);// 索引回溯
 
 [mysql mvcc机制](https://zhuanlan.zhihu.com/p/52977862)
 
+[mysql 死锁检测](https://bbs.huaweicloud.com/forum/thread-83643-1-1.html)
+
 [mysql char varchar]()
 
 ### IO
