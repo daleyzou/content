@@ -153,9 +153,17 @@ aList.remove(i--);// 索引回溯
 
 [http2 io多路复用](https://segmentfault.com/a/1190000016975064)
 
+[ip路由原理](https://zhuanlan.zhihu.com/p/338894712)
+
+[浏览器输入URL发生了什么](https://blog.csdn.net/ejennahuang/article/details/114821971)
+
+[计算机IP和子网掩码](https://zhuanlan.zhihu.com/p/50091071)
+
 
 ### 系统
-[生成分布式ID的方法]()
+[生成分布式ID的方法](https://blog.nowcoder.net/n/69fd7ba74a2641299d7c484ef454d9d0)
+
+[分库分表的设计思路](https://blog.csdn.net/baihualindesu/article/details/89493070)
 
 ### 基础及算法
 [avl 红黑树](https://blog.csdn.net/wanderlustLee/article/details/81297253)
