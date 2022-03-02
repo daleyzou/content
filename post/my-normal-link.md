@@ -19,7 +19,7 @@ aList.remove(i--);// 索引回溯
     内存屏障是个CPU指令,Java内存模型中volatile变量就是通过在写操作之后会插入一个store屏障，在读操作之前会插入一个load屏障，来实现的“禁止指令重排序”
 
 
-#### java线程池
+#### java 框架
 1、[java线程池](https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html)
 
 2、[Java中的ThreadPoolExecutor线程池](https://www.jianshu.com/p/ffda79c38f31)
@@ -29,6 +29,10 @@ aList.remove(i--);// 索引回溯
 [@Autowired底层实现](https://juejin.cn/post/6844903957135884295)
 
 [和为定值k的子数组长度](https://blog.csdn.net/study_000/article/details/77524798)
+
+[Mybatis ResultMap和ResultType的差别](https://cloud.tencent.com/developer/article/1455849)
+
+[@Autowired和@Resource的区别](https://juejin.cn/post/7022507865701089317)
 
 ### MySQL
 
