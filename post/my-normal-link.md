@@ -68,6 +68,8 @@ aList.remove(i--);// 索引回溯
 
 [mysql char varchar]()
 
+[mysql 不可重复读 和 幻读](https://cloud.tencent.com/developer/article/1450773)
+
 ### IO
 
 [异步io、NIO、AIO](https://blog.csdn.net/weixin_43122090/article/details/105462088)
