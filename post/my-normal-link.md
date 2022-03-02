@@ -34,6 +34,10 @@ aList.remove(i--);// 索引回溯
 
 [@Autowired和@Resource的区别](https://juejin.cn/post/7022507865701089317)
 
+[dubbo调用过程](https://dubbo.apache.org/zh/docsv2.7/dev/source/service-invoking-process/)
+
+[dubbo spi 机制](https://dubbo.apache.org/zh/docsv2.7/dev/source/dubbo-spi/)
+
 ### MySQL
 
 [mysql与redis数据同步](https://www.cnblogs.com/gered/p/11737388.html)
@@ -108,6 +112,8 @@ aList.remove(i--);// 索引回溯
 [线程里该如何返回值 callable runnable]()
 
 [ThreadLocal volatile 线程的内存模型]()
+
+[LongAdder vs AutomicInteger]()
 
 
 # Redis
