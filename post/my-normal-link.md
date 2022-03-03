@@ -38,6 +38,8 @@ aList.remove(i--);// 索引回溯
 
 [dubbo spi 机制](https://dubbo.apache.org/zh/docsv2.7/dev/source/dubbo-spi/)
 
+[Netty 知识点](https://zhuanlan.zhihu.com/p/148726453)
+
 ### MySQL
 
 [mysql与redis数据同步](https://www.cnblogs.com/gered/p/11737388.html)
@@ -69,6 +71,10 @@ aList.remove(i--);// 索引回溯
 [mysql char varchar]()
 
 [mysql 不可重复读 和 幻读](https://cloud.tencent.com/developer/article/1450773)
+
+[mysql mvcc的机制](https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/MySQL%E5%AE%9E%E6%88%9845%E8%AE%B2/08%20%20%E4%BA%8B%E5%8A%A1%E5%88%B0%E5%BA%95%E6%98%AF%E9%9A%94%E7%A6%BB%E7%9A%84%E8%BF%98%E6%98%AF%E4%B8%8D%E9%9A%94%E7%A6%BB%E7%9A%84%EF%BC%9F.md)
+
+
 
 ### IO
 
