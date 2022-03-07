@@ -40,6 +40,11 @@ aList.remove(i--);// 索引回溯
 
 [Netty 知识点](https://zhuanlan.zhihu.com/p/148726453)
 
+[分布式数据一致性](https://zhuanlan.zhihu.com/p/193802636)
+
+[线上cpu 100%排查](https://www.cnblogs.com/dennyzhangdd/p/11585971.html)
+
+
 ### MySQL
 
 [mysql与redis数据同步](https://www.cnblogs.com/gered/p/11737388.html)
