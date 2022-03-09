@@ -126,7 +126,7 @@ aList.remove(i--);// 索引回溯
 
 [threadlocal 内存泄露](https://zhuanlan.zhihu.com/p/56214714)
 
-[Java8 hashmap](https://zhuanlan.zhihu.com/p/72296421)
+[Java8 hashmap](https://zhuanlan.zhihu.com/p/72296421) 详细扩容流程
 
 [线程里该如何返回值 callable runnable]()
 
