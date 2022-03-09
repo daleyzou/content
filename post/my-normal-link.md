@@ -79,7 +79,13 @@ aList.remove(i--);// 索引回溯
 
 [mysql mvcc的机制](https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/MySQL%E5%AE%9E%E6%88%9845%E8%AE%B2/08%20%20%E4%BA%8B%E5%8A%A1%E5%88%B0%E5%BA%95%E6%98%AF%E9%9A%94%E7%A6%BB%E7%9A%84%E8%BF%98%E6%98%AF%E4%B8%8D%E9%9A%94%E7%A6%BB%E7%9A%84%EF%BC%9F.md)
 
+[mysql redo log and binlog](https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/MySQL%E5%AE%9E%E6%88%9845%E8%AE%B2/02%20%20%E6%97%A5%E5%BF%97%E7%B3%BB%E7%BB%9F%EF%BC%9A%E4%B8%80%E6%9D%A1SQL%E6%9B%B4%E6%96%B0%E8%AF%AD%E5%8F%A5%E6%98%AF%E5%A6%82%E4%BD%95%E6%89%A7%E8%A1%8C%E7%9A%84%EF%BC%9F.md)
 
+[mysql explain数据行数预估](https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/MySQL%E5%AE%9E%E6%88%9845%E8%AE%B2/10%20%20MySQL%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%89%E6%97%B6%E5%80%99%E4%BC%9A%E9%80%89%E9%94%99%E7%B4%A2%E5%BC%95%EF%BC%9F.md)   https://blog.csdn.net/tracymm19891990/article/details/104798190
+
+[mysql order by 流程]()
+
+[select 执行流程](https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/MySQL%E5%AE%9E%E6%88%9845%E8%AE%B2/01%20%20%E5%9F%BA%E7%A1%80%E6%9E%B6%E6%9E%84%EF%BC%9A%E4%B8%80%E6%9D%A1SQL%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5%E6%98%AF%E5%A6%82%E4%BD%95%E6%89%A7%E8%A1%8C%E7%9A%84%EF%BC%9F.md)
 
 ### IO
 
@@ -127,6 +133,8 @@ aList.remove(i--);// 索引回溯
 [ThreadLocal volatile 线程的内存模型]()
 
 [LongAdder vs AutomicInteger]()
+
+[ArrayBlockingQueue 的底层实现](https://www.cnblogs.com/tuyang1129/p/12683373.html)
 
 
 # Redis
@@ -200,7 +208,7 @@ aList.remove(i--);// 索引回溯
 
 [kafka时间轮算法](https://www.infoq.cn/article/erdajpj5epir65iczxzi)
 
-
+[kafka ISR]()
 
 ### 一些题
 [真题1](https://blog.csdn.net/Gupaoxueyuan/article/details/104820652)
