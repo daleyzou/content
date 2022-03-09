@@ -136,6 +136,9 @@ aList.remove(i--);// 索引回溯
 
 [ArrayBlockingQueue 的底层实现](https://www.cnblogs.com/tuyang1129/p/12683373.html)
 
+[LinkedBlockingQueue源码分析](https://mp.weixin.qq.com/s/MiS4QXPLIQb67zfLfW4RAw)
+
+
 
 # Redis
 [Redis 跳跃表]()
