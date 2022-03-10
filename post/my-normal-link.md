@@ -44,6 +44,8 @@ aList.remove(i--);// 索引回溯
 
 [线上cpu 100%排查](https://www.cnblogs.com/dennyzhangdd/p/11585971.html)
 
+[dubbo 和 reator](https://www.programminghunter.com/article/5494114964/)
+
 
 ### MySQL
 
@@ -158,6 +160,8 @@ aList.remove(i--);// 索引回溯
 [近似于LRU的内存淘汰策略](https://my.oschina.net/lscherish/blog/4467394)
 
 [redis cluster gossip](https://segmentfault.com/a/1190000038373546)
+
+[基于Redis的分布式锁和Redlock算法](https://blog.51cto.com/u_15064632/2601502)
 
 ### 线程池
 
