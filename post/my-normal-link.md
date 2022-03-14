@@ -46,6 +46,8 @@ aList.remove(i--);// 索引回溯
 
 [dubbo 和 reator](https://www.programminghunter.com/article/5494114964/)
 
+[netty 常见面试题](https://bbs.huaweicloud.com/blogs/273799)
+
 
 ### MySQL
 
