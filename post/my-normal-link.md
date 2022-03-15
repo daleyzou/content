@@ -91,6 +91,8 @@ aList.remove(i--);// 索引回溯
 
 [select 执行流程](https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/MySQL%E5%AE%9E%E6%88%9845%E8%AE%B2/01%20%20%E5%9F%BA%E7%A1%80%E6%9E%B6%E6%9E%84%EF%BC%9A%E4%B8%80%E6%9D%A1SQL%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5%E6%98%AF%E5%A6%82%E4%BD%95%E6%89%A7%E8%A1%8C%E7%9A%84%EF%BC%9F.md)
 
+[mysql 刷盘机制](https://blog.csdn.net/qq_40687433/article/details/112540401)
+
 ### IO
 
 [异步io、NIO、AIO](https://blog.csdn.net/weixin_43122090/article/details/105462088)
