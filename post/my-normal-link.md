@@ -48,6 +48,8 @@ aList.remove(i--);// 索引回溯
 
 [netty 常见面试题](https://bbs.huaweicloud.com/blogs/273799)
 
+[reactor三种模式对比](https://zhuanlan.zhihu.com/p/69341619)
+
 
 ### MySQL
 
