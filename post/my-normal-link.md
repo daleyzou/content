@@ -95,6 +95,8 @@ aList.remove(i--);// 索引回溯
 
 [mysql 刷盘机制](https://blog.csdn.net/qq_40687433/article/details/112540401)
 
+[半一致性读 和 当前读](https://www.linuxidc.com/Linux/2017-02/140843.htm)
+
 ### IO
 
 [异步io、NIO、AIO](https://blog.csdn.net/weixin_43122090/article/details/105462088)
