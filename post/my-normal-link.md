@@ -171,6 +171,10 @@ aList.remove(i--);// 索引回溯
 
 [基于Redis的分布式锁和Redlock算法](https://blog.51cto.com/u_15064632/2601502)
 
+[dictGetRendomKeys 实现获取字典随机key进行删除](https://segmentfault.com/a/1190000020547849)
+
+[redis lru and lfu实现](https://cherish-ls.github.io/2020/08/04/LRU%E5%92%8CLFU%E7%AE%97%E6%B3%95%E4%BB%A5%E5%8F%8A%E5%85%B6%E5%9C%A8Redis%E4%B8%AD%E7%9A%84%E5%AE%9E%E7%8E%B0/)
+
 ### 线程池
 
 [线程池](https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html)
