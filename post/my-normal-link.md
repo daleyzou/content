@@ -107,6 +107,8 @@ aList.remove(i--);// 索引回溯
 
 [cms and g1](https://cloud.tencent.com/developer/article/1647637)
 
+[虚拟机参数设置](https://cloud.tencent.com/developer/article/1695047)
+
 ### Java知识点
 [transmittable-thread-local](https://github.com/alibaba/transmittable-thread-local/issues/123)
 
@@ -214,6 +216,8 @@ aList.remove(i--);// 索引回溯
 [生成分布式ID的方法](https://blog.nowcoder.net/n/69fd7ba74a2641299d7c484ef454d9d0)
 
 [分库分表的设计思路](https://blog.csdn.net/baihualindesu/article/details/89493070)
+
+[常用设计模式]()
 
 ### 基础及算法
 [avl 红黑树](https://blog.csdn.net/wanderlustLee/article/details/81297253)
