@@ -221,6 +221,10 @@ aList.remove(i--);// 索引回溯
 
 [常用设计模式]()
 
+[jvm问题排查](https://blog.csdn.net/GitChat/article/details/79019454)
+
+[系统问题排查](https://www.jianshu.com/p/bca5a49db4b7)
+
 ### 基础及算法
 [avl 红黑树](https://blog.csdn.net/wanderlustLee/article/details/81297253)
 
