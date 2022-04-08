@@ -142,7 +142,7 @@ aList.remove(i--);// 索引回溯
 
 [线程里该如何返回值 callable runnable]()
 
-[ThreadLocal volatile 线程的内存模型]()
+[ThreadLocal ](https://www.cnblogs.com/wupeixuan/p/12638203.html)
 
 [LongAdder vs AutomicInteger]()
 
