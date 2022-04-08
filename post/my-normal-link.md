@@ -196,6 +196,8 @@ aList.remove(i--);// 索引回溯
 
 [零拷贝(Zero-copy) 浅析及其应用 ](https://www.cnblogs.com/rickiyang/p/13265043.html)
 
+[cpu三级缓存 mesi机制](https://zhuanlan.zhihu.com/p/411904385)
+
 ### 网络通讯
 [为何TCP要三次握手，两次行不行](https://draveness.me/whys-the-design-tcp-three-way-handshake/)
 
