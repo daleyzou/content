@@ -177,6 +177,8 @@ aList.remove(i--);// 索引回溯
 
 [redis lru and lfu实现](https://cherish-ls.github.io/2020/08/04/LRU%E5%92%8CLFU%E7%AE%97%E6%B3%95%E4%BB%A5%E5%8F%8A%E5%85%B6%E5%9C%A8Redis%E4%B8%AD%E7%9A%84%E5%AE%9E%E7%8E%B0/)
 
+[redis 批处理 、lua脚本](https://juejin.cn/post/6926414112788316174)
+
 ### 线程池
 
 [线程池](https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html)
