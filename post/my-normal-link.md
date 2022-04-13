@@ -109,6 +109,10 @@ aList.remove(i--);// 索引回溯
 
 [虚拟机参数设置](https://cloud.tencent.com/developer/article/1695047)
 
+[Gc roots 有哪些](https://juejin.cn/post/6844904163927654408)
+
+[虚拟机内存划分](https://juejin.cn/post/6935417287990050846)
+
 ### Java知识点
 [transmittable-thread-local](https://github.com/alibaba/transmittable-thread-local/issues/123)
 
@@ -150,7 +154,7 @@ aList.remove(i--);// 索引回溯
 
 [LinkedBlockingQueue源码分析](https://mp.weixin.qq.com/s/MiS4QXPLIQb67zfLfW4RAw)
 
-
+[双亲委派](https://www.cnblogs.com/hollischuang/p/14260801.html)
 
 # Redis
 [Redis 跳跃表]()
