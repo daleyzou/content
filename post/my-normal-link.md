@@ -247,7 +247,9 @@ aList.remove(i--);// 索引回溯
 
 [kafka时间轮算法](https://www.infoq.cn/article/erdajpj5epir65iczxzi)
 
-[kafka ISR]()
+[kafka ISR](https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/Kafka%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%AE%9E%E6%88%98/27%20%20%E5%85%B3%E4%BA%8E%E9%AB%98%E6%B0%B4%E4%BD%8D%E5%92%8CLeader%20Epoch%E7%9A%84%E8%AE%A8%E8%AE%BA.md)
+
+[kafka消费者组重平衡](https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/Kafka%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%AE%9E%E6%88%98/25%20%20%E6%B6%88%E8%B4%B9%E8%80%85%E7%BB%84%E9%87%8D%E5%B9%B3%E8%A1%A1%E5%85%A8%E6%B5%81%E7%A8%8B%E8%A7%A3%E6%9E%90.md)
 
 ### 一些题
 [真题1](https://blog.csdn.net/Gupaoxueyuan/article/details/104820652)
