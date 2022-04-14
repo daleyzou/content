@@ -113,6 +113,8 @@ aList.remove(i--);// 索引回溯
 
 [虚拟机内存划分](https://juejin.cn/post/6935417287990050846)
 
+[full gc 问题排查](https://blog.csdn.net/weixin_39626180/article/details/113073213)
+
 ### Java知识点
 [transmittable-thread-local](https://github.com/alibaba/transmittable-thread-local/issues/123)
 
