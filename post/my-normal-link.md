@@ -209,6 +209,8 @@ aList.remove(i--);// 索引回溯
 
 [cpu三级缓存 mesi机制](https://zhuanlan.zhihu.com/p/411904385)
 
+[mmap sendFile  splice 的区别](https://www.guodong.plus/2020/0802-153558/)
+
 ### 网络通讯
 [为何TCP要三次握手，两次行不行](https://draveness.me/whys-the-design-tcp-three-way-handshake/)
 
