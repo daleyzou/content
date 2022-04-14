@@ -156,6 +156,8 @@ aList.remove(i--);// 索引回溯
 
 [双亲委派](https://www.cnblogs.com/hollischuang/p/14260801.html)
 
+[三个线程循环打印 A B C](https://segmentfault.com/a/1190000021433079)
+
 # Redis
 [Redis 跳跃表]()
 
