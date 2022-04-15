@@ -161,6 +161,8 @@ aList.remove(i--);// 索引回溯
 
 [三个线程循环打印 A B C](https://segmentfault.com/a/1190000021433079)
 
+[线程池线程异常](https://zhuanlan.zhihu.com/p/136571068)
+
 # Redis
 [Redis 跳跃表]()
 
