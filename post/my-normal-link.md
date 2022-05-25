@@ -258,7 +258,10 @@ aList.remove(i--);// 索引回溯
 
 [kafka消费者组重平衡](https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/Kafka%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%AE%9E%E6%88%98/25%20%20%E6%B6%88%E8%B4%B9%E8%80%85%E7%BB%84%E9%87%8D%E5%B9%B3%E8%A1%A1%E5%85%A8%E6%B5%81%E7%A8%8B%E8%A7%A3%E6%9E%90.md)
 
-[kafka 为啥折磨快](https://www.guodong.plus/2020/0802-153558/)
+[kafka 为啥折磨快](https://zhuanlan.zhihu.com/p/120967989)
+
+[Linux 零拷贝](https://www.guodong.plus/2020/0802-153558/)
+
 
 ### 一些题
 [真题1](https://blog.csdn.net/Gupaoxueyuan/article/details/104820652)
@@ -285,8 +288,6 @@ https://github.com/Jstarfish/JavaKeeper
 [极客时间资料](https://learn.lianglianglee.com/)
 
 https://www.pdai.tech/md/java/thread/java-thread-x-threadlocal.html 
-
-hh
 
 
 
