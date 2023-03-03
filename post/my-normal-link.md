@@ -116,6 +116,8 @@ aList.remove(i--);// 索引回溯
 
 [full gc 问题排查](https://blog.csdn.net/weixin_39626180/article/details/113073213)
 
+[三色标记法](https://zhuanlan.zhihu.com/p/431406707)
+
 ### Java知识点
 [transmittable-thread-local](https://github.com/alibaba/transmittable-thread-local/issues/123)
 
