@@ -40,3 +40,22 @@ Java 虚拟机会让不同的 @Contended 字段处于独立的缓存行中，因
 子类构造函数的初始化。在子类实例变量被初始化之后，子类的构造函数被调用。
 
 需要注意的是，当创建子类对象时，以上顺序逐步执行，以确保父类的初始化顺序在子类之前完成。同时，如果子类没有显示地调用父类构造函数，则默认调用父类的无参构造函数。
+
+## 自己模拟虚拟机溢出场景
+https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%20Java%20%E8%99%9A%E6%8B%9F%E6%9C%BA-%E5%AE%8C/11%20%E7%AC%AC10%E8%AE%B2%EF%BC%9A%E5%8A%A8%E6%89%8B%E5%AE%9E%E8%B7%B5%EF%BC%9A%E8%87%AA%E5%B7%B1%E6%A8%A1%E6%8B%9F%20JVM%20%E5%86%85%E5%AD%98%E6%BA%A2%E5%87%BA%E5%9C%BA%E6%99%AF.md
+
+jvm 工具
+- gceasy 
+- MAT
+- GCViewer 
+- GCViewer 
+
+'''
+grep -n real gc.log | awk -F"=| " '{ if($8>0.1){ print }}'
+
+jstat -gcutil $pid 1000
+
+iostat -x 1
+
+jstat -gcutil -t 90542 1000 | awk 'BEGIN{pre=0}{if(NR>1) {print $0 "\t" ($12-pre) "\t" $12*100/$1 ; pre=$12 } else { print $0 "\tGCT_INC\tRate"} }' 
+'''
