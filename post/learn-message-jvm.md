@@ -26,6 +26,8 @@ Java 虚拟机会让不同的 @Contended 字段处于独立的缓存行中，因
 
 [G1垃圾回收器](https://blog.csdn.net/a745233700/article/details/121724998)
 
+[卡表和Rset](https://magicliang.github.io/2018/10/13/%E5%8D%A1%E8%A1%A8%E5%92%8C-RSet/)
+
 ## Java中继承类的初始化顺序可以总结为以下几点：
 
 父类静态代码块的初始化。父类的静态代码块在类被加载时执行，且仅执行一次。
