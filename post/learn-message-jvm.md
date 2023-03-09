@@ -61,4 +61,6 @@ jstat -gcutil $pid 1000
 iostat -x 1
 
 jstat -gcutil -t 90542 1000 | awk 'BEGIN{pre=0}{if(NR>1) {print $0 "\t" ($12-pre) "\t" $12*100/$1 ; pre=$12 } else { print $0 "\tGCT_INC\tRate"} }' 
+
+ps -p 75 -o rss,vsz
 ```
