@@ -64,3 +64,8 @@ jstat -gcutil -t 90542 1000 | awk 'BEGIN{pre=0}{if(NR>1) {print $0 "\t" ($12-pre
 
 ps -p 75 -o rss,vsz
 ```
+
+查看进程的内存分布情况
+```
+pmap -x 2154  | sort -n -k3
+```
