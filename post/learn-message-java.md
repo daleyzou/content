@@ -15,3 +15,6 @@ Java线程有以下几种状态：
 - Timed Waiting（计时等待）：线程进入计时等待状态，等待指定时间内的其他线程的通知或者某些条件的满足，此时该线程也不会占用CPU资源，直到等待的时间到达后线程被唤醒。
 
 - Terminated（终止）：线程运行结束后，进入Terminated状态。
+
+[LongAdder解析](https://juejin.cn/post/7103872764984950797)
+
