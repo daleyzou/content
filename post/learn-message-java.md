@@ -18,3 +18,6 @@ Java线程有以下几种状态：
 
 [LongAdder解析](https://juejin.cn/post/7103872764984950797)
 
+[volatile 关键字作用](http://www.51gjie.com/java/574.html)
+
+
