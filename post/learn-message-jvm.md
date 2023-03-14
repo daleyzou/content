@@ -69,3 +69,6 @@ ps -p 75 -o rss,vsz
 ```
 pmap -x 2154  | sort -n -k3
 ```
+
+## 垃圾收集器
+[Shenandoah 和 ZGC](https://realdaiwei.github.io/2021/06/27/garbage-collector-2/)
