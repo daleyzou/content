@@ -143,6 +143,8 @@ aList.remove(i--);// 索引回溯
 
 [深入理解ReentrantLock的实现原理](https://juejin.cn/post/6844903805683761165)
 
+[ConcurrentHashMap 源码](https://blog.csdn.net/a745233700/article/details/119709104)
+
 [从ReentrantLock的实现看AQS的原理及应用](https://tech.meituan.com/2019/12/05/aqs-theory-and-apply.html)
 
 [threadlocal 内存泄露](https://zhuanlan.zhihu.com/p/56214714)
