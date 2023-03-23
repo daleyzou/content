@@ -145,6 +145,8 @@ aList.remove(i--);// 索引回溯
 
 [ConcurrentHashMap 源码](https://blog.csdn.net/a745233700/article/details/119709104)
 
+[ConcurrentHashMap 的get方法](https://blog.51cto.com/Saintmm/5543206)
+
 [从ReentrantLock的实现看AQS的原理及应用](https://tech.meituan.com/2019/12/05/aqs-theory-and-apply.html)
 
 [threadlocal 内存泄露](https://zhuanlan.zhihu.com/p/56214714)
