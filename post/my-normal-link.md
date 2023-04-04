@@ -169,6 +169,8 @@ aList.remove(i--);// 索引回溯
 
 [线程池线程异常](https://zhuanlan.zhihu.com/p/136571068)
 
+[装饰器模式VS代理模式](https://blog.csdn.net/jiadajing267/article/details/106750920)
+
 # Redis
 [Redis 跳跃表]()
 
