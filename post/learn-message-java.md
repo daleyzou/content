@@ -33,3 +33,5 @@ Java线程有以下几种状态：
 [volatile 关键字作用](http://www.51gjie.com/java/574.html)
 
 
+### 线程池
+[SynchronousQueue原理解析](https://www.jianshu.com/p/af6f83c78506)
