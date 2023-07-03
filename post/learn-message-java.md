@@ -35,3 +35,8 @@ Java线程有以下几种状态：
 
 ### 线程池
 [SynchronousQueue原理解析](https://www.jianshu.com/p/af6f83c78506)
+
+### 知识点
+[tomcat是如何打破双亲委派机制的](https://developer.aliyun.com/article/1081332)
+
+
