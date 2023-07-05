@@ -82,3 +82,34 @@ pmap -x 2154  | sort -n -k3
 [tomcat / spi](https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%20Java%20%E8%99%9A%E6%8B%9F%E6%9C%BA-%E5%AE%8C/03%20%E5%A4%A7%E5%8E%82%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%9A%E4%BB%8E%E8%A6%86%E7%9B%96%20JDK%20%E7%9A%84%E7%B1%BB%E5%BC%80%E5%A7%8B%E6%8E%8C%E6%8F%A1%E7%B1%BB%E7%9A%84%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6.md)
 
 [jmm 和 jvm](https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%20Java%20%E8%99%9A%E6%8B%9F%E6%9C%BA-%E5%AE%8C/19%20%E5%A4%A7%E5%8E%82%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%9A%E4%B8%8D%E8%A6%81%E6%90%9E%E6%B7%B7%20JMM%20%E4%B8%8E%20JVM.md)
+
+## GC参数说明
+[GC链接](https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/Java%20%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E9%9D%A2%E8%AF%95%E7%B2%BE%E8%AE%B2/28%20%20%E8%B0%88%E8%B0%88%E4%BD%A0%E7%9A%84GC%E8%B0%83%E4%BC%98%E6%80%9D%E8%B7%AF-%E6%9E%81%E5%AE%A2%E6%97%B6%E9%97%B4.md)
+
+[相关参数说明](https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/Java%20%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E9%9D%A2%E8%AF%95%E7%B2%BE%E8%AE%B2/35%20%20JVM%E4%BC%98%E5%8C%96Java%E4%BB%A3%E7%A0%81%E6%97%B6%E9%83%BD%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88%EF%BC%9F-%E6%9E%81%E5%AE%A2%E6%97%B6%E9%97%B4.md)
+```
+调整类型卸载
+-XX:+ClassUnloadingWithConcurrentMark
+
+G1字符串排重
+-XX:+UseStringDeduplication
+
+G1设置占用百分比
+-XX:InitiatingHeapOccupancyPercent
+
+打印GC日志
+-XX:+PrintGCDetails
+-XX:+PrintGCDateStamps
+
+// 打印G1 Ergonomics相关信息
+-XX:+PrintAdaptiveSizePolicy
+
+并行引用处理
+-XX:+PrintReferenceGC
+
+ JIT 编译的代码是存储在 Code Cache 中的，需要注意的是 Code Cache 是存在大小限制的，而且不会动态调整
+-XX:ReservedCodeCacheSize=<SIZE>
+
+关闭偏斜锁
+-XX:-UseBiasedLocking
+```
