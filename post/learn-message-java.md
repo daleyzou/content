@@ -39,4 +39,11 @@ Java线程有以下几种状态：
 ### 知识点
 [tomcat是如何打破双亲委派机制的](https://developer.aliyun.com/article/1081332)
 
+分布式 CAP 定理， raft 保证 CP
+
+### 分布式ID
+- 数据库生成  （id，  businessType， number），select for update 然后更新  （1、数据库自增   2、按业务逐个获取   3、按业务批量获取）
+- zookeeper 的临时有序节点 
+- redis 的 incr
+- snowflake 雪花算法
 
