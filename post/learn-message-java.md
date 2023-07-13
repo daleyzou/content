@@ -40,3 +40,46 @@ Java线程有以下几种状态：
 [tomcat是如何打破双亲委派机制的](https://developer.aliyun.com/article/1081332)
 
 
+### java 序列化 和 单例
+一个序列化了的单例
+```
+import java.io.Serializable;
+
+public class Singleton implements Serializable {
+    private static final long serialVersionUID = 1L;
+    
+    private static Singleton instance;
+
+    private Singleton() {
+        // 私有构造方法
+    }
+
+    public static synchronized Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+
+    protected Object readResolve() {
+        return getInstance();
+    }
+}
+
+```
+
+### tcp中的四次挥手
+在 TCP 四次挥手中，TIME_WAIT 状态出现在主动关闭方。具体的四次挥手流程如下：
+
+1. 第一步，主动关闭方发送一个 FIN（FIN=1）报文给被动关闭方，表示主动关闭方不再发送数据。主动关闭方进入 FIN_WAIT_1 状态。
+
+2. 第二步，被动关闭方接收到 FIN 报文后，发送一个 ACK（ACK=1）报文作为确认，表示被动关闭方已经收到了主动关闭方的关闭请求。被动关闭方进入 CLOSE_WAIT 状态。
+
+3. 第三步，被动关闭方发送一个 FIN 报文给主动关闭方，表示被动关闭方也希望关闭连接。被动关闭方进入 LAST_ACK 状态。
+
+4. 第四步，主动关闭方接收到 FIN 报文后，发送一个 ACK 报文作为确认，并进入 TIME_WAIT 状态。主动关闭方等待一段时间（通常是两倍的 MSL，即最长报文段生存时间），以确保被动关闭方接收到了 ACK 报文并丢弃了可能延迟到达的数据。
+
+在 TIME_WAIT 状态期间，主动关闭方会等待一段时间，以确保旧连接上的所有报文都被丢弃，避免与新的连接混淆。在等待时间结束后，主动关闭方将结束 TIME_WAIT 状态，完全关闭连接。
+
+总结而言，在 TCP 四次挥手中，TIME_WAIT 状态出现在主动关闭方，用于确保连接的可靠关闭。
+
