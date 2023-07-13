@@ -39,6 +39,11 @@ Java线程有以下几种状态：
 ### 知识点
 [tomcat是如何打破双亲委派机制的](https://developer.aliyun.com/article/1081332)
 
+
+[NIO netty](https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/Java%20%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E9%9D%A2%E8%AF%95%E7%B2%BE%E8%AE%B2/38%20%20%E5%AF%B9%E6%AF%94Java%E6%A0%87%E5%87%86NIO%E7%B1%BB%E5%BA%93%EF%BC%8C%E4%BD%A0%E7%9F%A5%E9%81%93Netty%E6%98%AF%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%9B%B4%E9%AB%98%E6%80%A7%E8%83%BD%E7%9A%84%E5%90%97%EF%BC%9F-%E6%9E%81%E5%AE%A2%E6%97%B6%E9%97%B4.md)
+
+
+=======
 [netty 中使用的 select poll  epoll](https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/Java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98/08%20%20%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1%E4%BC%98%E5%8C%96%E4%B9%8BIO%E6%A8%A1%E5%9E%8B%EF%BC%9A%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E9%AB%98%E5%B9%B6%E5%8F%91%E4%B8%8BIO%E7%93%B6%E9%A2%88%EF%BC%9F.md)
 
 
@@ -86,5 +91,6 @@ public class Singleton implements Serializable {
 在 TIME_WAIT 状态期间，主动关闭方会等待一段时间，以确保旧连接上的所有报文都被丢弃，避免与新的连接混淆。在等待时间结束后，主动关闭方将结束 TIME_WAIT 状态，完全关闭连接。
 
 总结而言，在 TCP 四次挥手中，TIME_WAIT 状态出现在主动关闭方，用于确保连接的可靠关闭。
+
 
 
