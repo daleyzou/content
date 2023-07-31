@@ -120,5 +120,29 @@ https://worktile.com/kb/ask/7774.html
 
 信号量（Semaphore）：信号量是一种用于控制并发访问资源的同步机制。进程可以对信号量进行等待（阻塞）或者释放（唤醒）操作，通过改变信号量的值来实现进程之间的同步与互斥。
 
+### 单例
+除了静态初始化和加锁双重判定，还可以可使用内部类的方式
+```
+// 懒汉模式 内部类实现
+public final class Singleton {
+	public List<String> list = null;// list 属性
+ 
+	private Singleton() {// 构造函数
+		list = new ArrayList<String>();
+	}
+ 
+	// 内部类实现
+	public static class InnerSingleton {
+		private static Singleton instance=new Singleton();// 自行创建实例
+	}
+ 
+	public static Singleton getInstance() {
+		return InnerSingleton.instance;// 返回内部类中的静态变量
+	}
+}
+```
+
+
+
 套接字（Socket）：套接字是一种网络通信的方式，可以在同一台机器上的不同进程之间进行通信，也可以在网络中的不同主机之间进行通信。套接字提供了一种灵活的、可靠的通信机制。
 
