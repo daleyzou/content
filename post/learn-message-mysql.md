@@ -42,3 +42,6 @@ CREATE TABLE my_table1 (
 INSERT INTO my_table1 (id, location) VALUES (1, POINT(40, -73));
 SELECT * FROM my_table1 WHERE ST_Distance(location, POINT(40, -73)) < 1000;
 ```
+
+[B+树](https://zhuanlan.zhihu.com/p/27700617)
+
