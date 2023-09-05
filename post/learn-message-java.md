@@ -174,4 +174,7 @@ NESTED：如果当前存在事务，则创建一个嵌套事务并在其中执�
 - 缓存 HashCode
 - 线程安全
 
+### AQS 源码
+https://javadoop.com/post/AbstractQueuedSynchronizer
+
 
