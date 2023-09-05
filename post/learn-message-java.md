@@ -42,6 +42,9 @@ Java线程有以下几种状态：
 6 种常见的线程池
 - 即 FixedThreadPool、CachedThreadPool、ScheduledThreadPool、SingleThreadExecutor、SingleThreadScheduledExecutor 和 ForkJoinPool
 
+线程池中比较常用的是 3 种阻塞队列
+- 即 LinkedBlockingQueue、SynchronousQueue、DelayedWorkQueue
+
 ### 知识点
 [tomcat是如何打破双亲委派机制的](https://developer.aliyun.com/article/1081332)
 
