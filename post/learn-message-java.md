@@ -39,6 +39,9 @@ Java线程有以下几种状态：
 线程池四种拒绝策略
 - AbortPolicy、DiscardPolicy、DiscardOldestPolicy、CallerRunsPolicy
 
+6 种常见的线程池
+- 即 FixedThreadPool、CachedThreadPool、ScheduledThreadPool、SingleThreadExecutor、SingleThreadScheduledExecutor 和 ForkJoinPool
+
 ### 知识点
 [tomcat是如何打破双亲委派机制的](https://developer.aliyun.com/article/1081332)
 
