@@ -45,3 +45,6 @@ SELECT * FROM my_table1 WHERE ST_Distance(location, POINT(40, -73)) < 1000;
 
 [B+树](https://zhuanlan.zhihu.com/p/27700617)
 
+#### 针对已经存在表数据的情况下， 修改表的字符集
+正确修改列字符集的命令应该使用 ALTER TABLE … CONVERT TO…这样才能将之前的列 a 字符集从 UTF8 修改为 UTF8MB4
+
