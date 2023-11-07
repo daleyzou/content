@@ -55,3 +55,8 @@ SELECT * FROM my_table1 WHERE ST_Distance(location, POINT(40, -73)) < 1000;
 #### 针对已经存在表数据的情况下， 修改表的字符集
 正确修改列字符集的命令应该使用 ALTER TABLE … CONVERT TO…这样才能将之前的列 a 字符集从 UTF8 修改为 UTF8MB4
 
+
+#### 索引使用情况
+可以通过查询表 mysql.innodb_index_stats 查看每个索引的大致情况
+
+可以通过查询表sys.schema_unused_indexes，查看有哪些索引一直未被使用过，可以被废弃
