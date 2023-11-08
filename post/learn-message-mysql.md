@@ -60,3 +60,5 @@ SELECT * FROM my_table1 WHERE ST_Distance(location, POINT(40, -73)) < 1000;
 可以通过查询表 mysql.innodb_index_stats 查看每个索引的大致情况
 
 可以通过查询表sys.schema_unused_indexes，查看有哪些索引一直未被使用过，可以被废弃
+
+针对已经在查询语句中使用了函数，导致无法使用索引的，可以创建一个函数索引
