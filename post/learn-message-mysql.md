@@ -62,3 +62,6 @@ SELECT * FROM my_table1 WHERE ST_Distance(location, POINT(40, -73)) < 1000;
 可以通过查询表sys.schema_unused_indexes，查看有哪些索引一直未被使用过，可以被废弃
 
 针对已经在查询语句中使用了函数，导致无法使用索引的，可以创建一个函数索引
+
+#### 常用索引使用方式
+EXPLAIN FORMAT=tree   可以看到更详细的SQL执行数据
