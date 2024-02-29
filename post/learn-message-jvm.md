@@ -78,6 +78,8 @@ pmap -x 2154  | sort -n -k3
 ## 垃圾收集器
 [Shenandoah 和 ZGC](https://realdaiwei.github.io/2021/06/27/garbage-collector-2/)
 
+[java 17 收集](https://huminxi.netlify.app/2022/07/06/java%208%20vs%20java%2017%20%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8/)
+
 ## 双亲委派机制及其打破情况
 [tomcat / spi](https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%20Java%20%E8%99%9A%E6%8B%9F%E6%9C%BA-%E5%AE%8C/03%20%E5%A4%A7%E5%8E%82%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%9A%E4%BB%8E%E8%A6%86%E7%9B%96%20JDK%20%E7%9A%84%E7%B1%BB%E5%BC%80%E5%A7%8B%E6%8E%8C%E6%8F%A1%E7%B1%BB%E7%9A%84%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6.md)
 
