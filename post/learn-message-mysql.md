@@ -65,3 +65,8 @@ SELECT * FROM my_table1 WHERE ST_Distance(location, POINT(40, -73)) < 1000;
 
 #### 常用索引使用方式
 EXPLAIN FORMAT=tree   可以看到更详细的SQL执行数据
+
+#### 大事务执行时间过滤
+```
+select * from information_schema.innodb_trx where TIME_TO_SEC(timediff(now(),trx_started))>60
+```
