@@ -70,3 +70,8 @@ EXPLAIN FORMAT=tree   可以看到更详细的SQL执行数据
 ```
 select * from information_schema.innodb_trx where TIME_TO_SEC(timediff(now(),trx_started))>60
 ```
+
+#### 普通索引 VS 唯一索引
+可以选择的情况下， 尽量选择普通索引， 配置 change buffer 使用， 避免随机加载磁盘页到内存中
+
+
