@@ -81,6 +81,6 @@ show index from t;
 analyze t;
 start transaction with consistent snapshot;
 select * from t where (a between 1 and 1000)  and (b between 50000 and 100000) order by b limit 1;
-
+explain select * from t where (a between 1 and 1000)  and (b between 50000 and 100000) order by (b,a) limit 1;
 ```
 
