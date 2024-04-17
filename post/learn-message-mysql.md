@@ -74,4 +74,12 @@ select * from information_schema.innodb_trx where TIME_TO_SEC(timediff(now(),trx
 #### 普通索引 VS 唯一索引
 可以选择的情况下， 尽量选择普通索引， 配置 change buffer 使用， 避免随机加载磁盘页到内存中
 
+#### 索引查询条件
+```
+explain select * from t where a between 10 and 10000;
+show index from t;
+analyze t;
+start transaction with consistent snapshot;
+
+```
 
