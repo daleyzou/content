@@ -6,3 +6,12 @@
 
 
 #### tcp 的四次挥手
+
+
+#### tcp 相关连接状态
+TIME_WAIT 、CLOSE_WAIT 
+```
+netstat  -anp | grep TIME_WAIT | wc -l
+
+
+```
