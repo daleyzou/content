@@ -12,6 +12,7 @@
 TIME_WAIT 、CLOSE_WAIT 
 ```
 netstat  -anp | grep TIME_WAIT | wc -l
-
+CLOSE_WAIT： 被动关闭的一方，等待上层应用调度关闭
+TIME_WAIT： 主动关闭的一方， 等待 2ML 的时间后关闭
 
 ```
