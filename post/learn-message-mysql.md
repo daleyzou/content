@@ -96,7 +96,8 @@ select @a/@b;
 
 nodb_flush_neighbors 参数为 1 时，会导致 如果跟它相邻的数据页也还是脏页的话，也会被放到一起刷
 ```
-
+#### select 查询表的总行数
+select count(*) vs select count(1) vs select count(id) 
 
 
 
