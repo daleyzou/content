@@ -83,4 +83,11 @@ start transaction with consistent snapshot;
 select * from t where (a between 1 and 1000)  and (b between 50000 and 100000) order by b limit 1;
 explain select * from t where (a between 1 and 1000)  and (b between 50000 and 100000) order by (b,a) limit 1;
 ```
+#### innodb 控制刷新脏页
+```
+innodb_io_capacity 这个参数控制写入磁盘io
+这个值我建议你设置成磁盘的 IOPS。磁盘的 IOPS 可以通过 fio 这个工具来测试
+fio -filename=$filename -direct=1 -iodepth 1 -thread -rw=randrw -ioengine=psync -bs=16k -size=500M -numjobs=10 -runtime=10 -group_reporting -name=mytest 
+```
+
 
