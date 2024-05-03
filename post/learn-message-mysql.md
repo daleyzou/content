@@ -88,6 +88,11 @@ SET optimizer_trace='enabled=on';
 SELECT to_location_code  FROM `ess_adapter_task_detail` order by rand() limit 3;
 /* 查看 OPTIMIZER_TRACE 输出 */
 SELECT * FROM `information_schema`.`OPTIMIZER_TRACE`
+
+查看事务运行状态
+select * from information_schema.innodb_trx
+
+
 ```
 #### innodb 控制刷新脏页
 ```
@@ -130,3 +135,18 @@ ps:是说索引的有序查找功能失效，不是不走索引树
 - lock in share mode; 行锁迟迟没有释放
 - 单纯语句查询慢，全表扫描等  （set long_query_time=0）
 - undo log 太长
+
+#### 间隙锁
+间隙锁没有互斥的功能， 都加间隙锁会导致死锁  （直接中断重试 or 死锁检测）
+
+#### 相关配置
+通常我们说 MySQL 的“双 1”配置，指的就是 sync_binlog 和 innodb_flush_log_at_trx_commit 都设置成 1。也就是说，一个事务完整提交前，需要等待两次刷盘，一次是 redo log（prepare 阶段），一次是 binlog
+
+- 业务高峰期。一般如果有预知的高峰期，DBA 会有预案，把主库设置成“非双 1”。
+- 备库延迟，为了让备库尽快赶上主库。
+- 用备份恢复主库的副本，应用 binlog 的过程，这个跟上一种场景类似。
+- 批量导入数据的时候。
+一般情况下，把生产库改成“非双 1”配置，是设置 innodb_flush_logs_at_trx_commit=2、sync_binlog=1000。
+
+- redo log 和 binlog 都是顺序写，磁盘的顺序写比随机写速度要快；
+- 组提交机制，可以大幅度降低磁盘的 IOPS 消耗。
