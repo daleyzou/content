@@ -82,6 +82,12 @@ analyze t;
 start transaction with consistent snapshot;
 select * from t where (a between 1 and 1000)  and (b between 50000 and 100000) order by b limit 1;
 explain select * from t where (a between 1 and 1000)  and (b between 50000 and 100000) order by (b,a) limit 1;
+
+/* 打开 optimizer_trace，只对本线程有效 */
+SET optimizer_trace='enabled=on'; 
+SELECT to_location_code  FROM `ess_adapter_task_detail` order by rand() limit 3;
+/* 查看 OPTIMIZER_TRACE 输出 */
+SELECT * FROM `information_schema`.`OPTIMIZER_TRACE`
 ```
 #### innodb 控制刷新脏页
 ```
@@ -99,5 +105,10 @@ nodb_flush_neighbors 参数为 1 时，会导致 如果跟它相邻的数据页�
 #### select 查询表的总行数
 select count(*) vs select count(1) vs select count(id) 
 
+#### MySQL 变量
+```
+max_length_for_sort_data： 排序时的数据长度
+tmp_table_size：内存临时表的大小
+```
 
 
