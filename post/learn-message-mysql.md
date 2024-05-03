@@ -111,4 +111,22 @@ max_length_for_sort_data： 排序时的数据长度
 tmp_table_size：内存临时表的大小
 ```
 
+#### mysql 排序的方式 
+- 通过索引字段直接排序
+- 使用内存表排序 （全字段排序 or rowid排序）
+- 使用磁盘临时表排序 （innodb引擎）
+- 优先队列排序算法 （大顶堆、小顶堆的思路）
 
+#### 索引功能失效
+ps:是说索引的有序查找功能失效，不是不走索引树
+- 字段使用了函数计算
+- 字段存在函数运算
+- 存在隐式类型转换
+- 字符集转换
+
+#### 一条查询被堵住的情况
+- 等待其他获取了表 MDL 锁的线程释放
+- flush tables t with read lock;  其他线程在 flush
+- lock in share mode; 行锁迟迟没有释放
+- 单纯语句查询慢，全表扫描等  （set long_query_time=0）
+- undo log 太长
