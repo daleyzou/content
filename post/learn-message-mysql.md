@@ -114,6 +114,8 @@ select count(*) vs select count(1) vs select count(id)
 ```
 max_length_for_sort_data： 排序时的数据长度
 tmp_table_size：内存临时表的大小
+slave_parallel_workers：从库应用binlog日志并发线程数
+slave_parallel_type：从库如何并发复制
 ```
 
 #### mysql 排序的方式 
@@ -150,3 +152,16 @@ ps:是说索引的有序查找功能失效，不是不走索引树
 
 - redo log 和 binlog 都是顺序写，磁盘的顺序写比随机写速度要快；
 - 组提交机制，可以大幅度降低磁盘的 IOPS 消耗。
+
+#### 主从延迟的原因
+- 从库硬件性能较低 （修改从库非双一模式）
+- 从库承担了大量统计类分析查询
+- 存在大事务
+- 大表的 DDL
+- 备库的并行复制能力
+- 备库起了其他长事务（比如：改表结构而长期没有提交事务）
+
+#### 从库同步能力
+- 对同一行的修改要放到同一个worker中
+- 一个事务不能拆分，给一个worker执行
+- 按表分发和按行分发
