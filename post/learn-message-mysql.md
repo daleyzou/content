@@ -116,6 +116,7 @@ max_length_for_sort_data： 排序时的数据长度
 tmp_table_size：内存临时表的大小
 slave_parallel_workers：从库应用binlog日志并发线程数
 slave_parallel_type：从库如何并发复制
+innodb_thread_concurrency : innodb并发线程上限
 ```
 
 #### mysql 排序的方式 
