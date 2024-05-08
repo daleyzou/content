@@ -92,7 +92,7 @@ SELECT * FROM `information_schema`.`OPTIMIZER_TRACE`
 查看事务运行状态
 select * from information_schema.innodb_trx
 
-
+show engine innodb status
 ```
 #### innodb 控制刷新脏页
 ```
