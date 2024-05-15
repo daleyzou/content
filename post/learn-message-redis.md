@@ -5,7 +5,21 @@ draft: false
 ---
 
 #### redis 数据结构
-Redis 数据库提供了丰富的键值对类型，其中包括了 String、List、Hash、Set 和 Sorted Set 这五种基本键值类型。此外，Redis 还支持位图、HyperLogLog、Geo 等扩展数据类型。
+Redis 数据库提供了丰富的键值对类型，其中包括了 String、List、Hash、Set 和 Sorted Set 这五种基本键值类型。此外，Redis 还支持位图、HyperLogLog、Geo 等扩展数据类型。<br>
+省内存的数据结构<br>
+简单动态字符串（SDS）、压缩列表（ziplist）和整数集合（intset） <br>
+嵌入式字符串<br>
+一个是使用连续的内存空间，避免内存碎片开销；二个是针对不同长度的数据，采用不同大小的元数据
+
+```
+typedef struct redisObject {
+    unsigned type:4; //redisObject的数据类型，4个bits
+    unsigned encoding:4; //redisObject的编码类型，4个bits
+    unsigned lru:LRU_BITS;  //redisObject的LRU时间，LRU_BITS为24个bits
+    int refcount; //redisObject的引用计数，4个字节
+    void *ptr; //指向值的指针，8个字节
+} robj;
+```
 
 #### redis 字符串实现
 char * 存在两个问题 1、不能迅速获取字符数组长度  2、字符串间拼接复杂且效率低
