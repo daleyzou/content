@@ -64,9 +64,38 @@ char * 存在两个问题 1、不能迅速获取字符数组长度  2、字符�
 跳表是一个多层的有序链表<br>
 跳表设计采用随机的方法来确定每个结点的层数<br>
 
+#### 淘汰策略
+近似 LRU 算法、LFU 算法、按 TTL 值淘汰、随机淘汰、不淘汰
+
 #### redis 淘汰策略-LRU
+redisObject 结构体中的 lru 变量 <br>
+随机选取key加入数组 ，配置项 maxmemory-samples 决定的，该配置项的默认值是 5 <br>
+待淘汰的候选键值对集合, EvictionPoolLRU 数组分配内存空间，该数组的大小由宏定义 EVPOOL_SIZE（在 evict.c 文件中）决定，默认是 16 个元素 <br>
+
 
 #### redis 淘汰策略-LFU
+1. 第一部分是 lru 变量的高 16 位，是以 1 分钟为精度的 UNIX 时间戳
+2. 第二部分是 lru 变量的低 8 位，被设置为宏定义 LFU_INIT_VAL（在server.h文件中），默认值为 5
+3. 把这个时长除以 lfu_decay_time 的值，并把结果作为访问次数的衰减大小(在默认情况下，访问次数的衰减大小就是等于上一次访问距离当前的分钟数)
+4. 根据当前访问更新访问次数 (取倒数，当前访问次数越大，增加概率越小)
+```
+uint8_t LFULogIncr(uint8_t counter) {
+    if (counter == 255) return 255; //访问次数已经等于255，直接返回255
+    double r = (double)rand()/RAND_MAX;  //计算一个随机数
+    double baseval = counter - LFU_INIT_VAL;  //计算当前访问次数和初始值的差值
+    if (baseval < 0) baseval = 0; //差值小于0，则将其设为0
+    double p = 1.0/(baseval*server.lfu_log_factor+1); //根据baseval和lfu_log_factor计算阈值p
+    if (r < p) counter++; //概率值小于阈值时,
+    return counter;
+}
+```
+LFU 算法相比其他算法来说，更容易把低频访问的冷数据尽早淘汰掉，这也是它的适用场景<br>
+访问次数按时间衰减和访问次数按概率增加<br>
+基于异步删除的数据淘汰过程，实际上会根据要删除的键值对包含的元素个数，来决定是实际使用后台线程还是主线程来进行删除操作<br>
+删除操作实际上是包括了两步子操作。
+1. 子操作一：将被淘汰的键值对从哈希表中去除，这里的哈希表既可能是设置了过期 key 的哈希表，也可能是全局哈希表。
+2. 子操作二：释放被淘汰键值对所占用的内存空间。
+
 
 #### 一条 redis 指令的执行过程
 1. 操作系统io多路复用， epoll 一次获取多个就绪描述符
