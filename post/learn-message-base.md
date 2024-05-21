@@ -24,3 +24,7 @@ time_wait作用
 ```
 #### 分布式协议
 Raft ，包括 Leader、Follower、Candidate 三种节点类型，哨兵在正常运行时并不像 Raft 协议那样区分了三种节点类型，而是所有哨兵都是对等的。而当哨兵发现主节点故障，要执行故障切换时，会按照 Raft 协议中 Leader 选举的规则，进行投票选出 Leader
+
+#### 链接
+https://www.hzhr.cc/wap/c_article-a_show-id_33709.html <br>
+https://blog.csdn.net/Weixiaohuai/article/details/120853683
