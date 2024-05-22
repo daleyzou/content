@@ -118,7 +118,23 @@ LFU 算法相比其他算法来说，更容易把低频访问的冷数据尽早�
 整个复制过程分成四个阶段，分别是初始化、建立连接、主从握手、复制类型判断与执行<br>
 
 #### 哨兵
+一旦哨兵判断主节点客观下线了，那么哨兵就会进行哨兵 Leader 选举 <br>
+要比较哨兵的纪元，以及 master 记录的 Leader 纪元，这样才能满足 Raft 协议对 Follower 在一轮投票中只能投一票的要求 <br>
+哨兵会使用 sentinelRedisInstance 结构体来记录主节点的信息，在这个结构体中又记录了监听同一主节点的其他哨兵的信息<br>
+获得其他哨兵的信息,发布订阅（Pub/Sub）通信方法
 
+#### redis cluster
+Gossip 协议通信、集群关键命令和数据迁移等机制<br>
+对于 Redis 来说，集群节点信息包括了节点名称、IP、端口号等，而节点运行状态主要用两个时间来表示，分别是节点向其他节点发送 PING 消息的时间，以及它自己收到其他节点返回的 PONG 消息的时间。最后，集群中数据的分布情况，在 Redis 中就对应了 Redis Cluster 的 slots 分配情况，也就是每个节点拥有哪些 slots。<br>
+
+当集群节点按照 Gossip 协议工作时，每个节点会以一定的频率从集群中随机挑选一些其他节点，把自身的信息和已知的其他节点信息，用 PING 消息发送给选出的节点。而其他节点收到 PING 消息后，也会把自己的信息和已知的其他节点信息，用 PONG 消息返回给发送节点<br>
+
+```
+#define CLUSTERMSG_TYPE_PING 0  //Ping消息，用来向其他节点发送当前节点信息
+#define CLUSTERMSG_TYPE_PONG 1  //Pong消息，对Ping消息的回复
+#define CLUSTERMSG_TYPE_MEET 2  //Meet消息，表示某个节点要加入集群
+#define CLUSTERMSG_TYPE_FAIL 3  //Fail消息，表示某个节点有故障
+```
 
 ```
 ```
