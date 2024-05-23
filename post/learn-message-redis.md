@@ -135,6 +135,8 @@ Gossip 协议通信、集群关键命令和数据迁移等机制<br>
 #define CLUSTERMSG_TYPE_MEET 2  //Meet消息，表示某个节点要加入集群
 #define CLUSTERMSG_TYPE_FAIL 3  //Fail消息，表示某个节点有故障
 ```
+要通过 Ping-Pong 消息发送节点自身的信息，以及节点已知的其他节点的信息<br>
+随机选择节点发送， clusterCron 函数先通过随机选择五个节点，然后，再在其中挑选和当前节点最长时间没有发送 Pong 消息的节点，作为目标节点
 
 ```
 ```
