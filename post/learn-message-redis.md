@@ -116,6 +116,20 @@ LFU 算法相比其他算法来说，更容易把低频访问的冷数据尽早�
 全量复制、增量复制和长连接同步<br>
 基于状态机的设计思想<br>
 整个复制过程分成四个阶段，分别是初始化、建立连接、主从握手、复制类型判断与执行<br>
+防止从节点断连等情况，循环缓冲区,保存期间主节点的指令<br>
+
+循环缓冲区的结构
+```
+struct redisServer {
+…
+char *repl_backlog;             //基于字符数组的循环缓冲区
+long long repl_backlog_size;    //循环缓冲区总长度
+long long repl_backlog_histlen; //循环缓冲区中当前累积的数据的长度
+long long repl_backlog_idx;     //循环缓冲区的写指针位置
+long long repl_backlog_off;   //循环缓冲区最早保存的数据的首字节在全局范围内的偏移
+…
+}
+```
 
 #### 哨兵
 一旦哨兵判断主节点客观下线了，那么哨兵就会进行哨兵 Leader 选举 <br>
