@@ -19,7 +19,9 @@ listpack 中每个列表项不再包含前一项的长度了，因此当某个�
  Redis server 启动后，它的主要工作包括接收客户端请求、解析请求和进行数据读写等操作，是由单线程来执行的<br>
  Redis 还启动了 3 个线程来执行文件关闭、AOF 同步写和惰性删除等操作<br>
  Redis 6.0 中新设计实现的多 IO 线程机制。这个机制的设计主要是为了使用多个 IO 线程，来并发处理客户端读取数据、解析命令和写回数据<br>
- 
+ [ziplist vs listpack](https://ost.51cto.com/posts/11227) <br>
+ [redis bigKey]()
+ [redis 延迟队列]()
  
 ```
 typedef struct redisObject {
