@@ -28,3 +28,11 @@ Raft ，包括 Leader、Follower、Candidate 三种节点类型，哨兵在正�
 #### 链接
 https://www.hzhr.cc/wap/c_article-a_show-id_33709.html <br>
 https://blog.csdn.net/Weixiaohuai/article/details/120853683
+
+#### 通信方式
+- 进程 系统进行资源分配和调度的基本单位
+- 线程 是进程的一个实体,是CPU调度和分派的基本单位
+##### 进程间通信
+管道（有名管道、无名管道）、消息队列、共享内存、信号量、信号、socket
+##### 线程间通信
+信号量、信号、锁
