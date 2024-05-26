@@ -20,8 +20,12 @@ listpack 中每个列表项不再包含前一项的长度了，因此当某个�
  Redis 还启动了 3 个线程来执行文件关闭、AOF 同步写和惰性删除等操作<br>
  Redis 6.0 中新设计实现的多 IO 线程机制。这个机制的设计主要是为了使用多个 IO 线程，来并发处理客户端读取数据、解析命令和写回数据<br>
  [ziplist vs listpack](https://ost.51cto.com/posts/11227) <br>
- [redis bigKey]()
- [redis 延迟队列]()
+ [redis bigKey](https://blog.csdn.net/Weixiaohuai/article/details/125391957) <br>
+ [redis 延迟队列](https://developer.aliyun.com/article/895156) <br>
+
+GEO：适用于地理位置存储和查询，主要用于基于位置的服务。 <br> 
+HyperLogLog：用于高效地近似计算大规模集合的基数，适合用于去重统计和实时分析。 <br>
+Bitmap：用于高效地处理和存储位（bit）信息，适合用于在线状态记录、统计和数据压缩。 <br>
  
 ```
 typedef struct redisObject {
@@ -162,5 +166,36 @@ Redis Cluster 迁移数据的整个过程可以分成五个大步骤，分别是
 4. 目的节点处理迁移数据；
 5. 标记迁移结果。
 
+过 PING、PONG 消息进行信息交换，这些心跳消息包含了当前实例和部分其它实例的状态信息，以及 Slot 分配信息<br>
+通过调整 cluster-node-timeout 配置项减少心跳消息的占用带宽情况<br>
+Gossip 消息大小、 实例间通信频率
+#### 延迟队列
+- 第一种是利用 zrangebyscore 查询符合条件的所有待处理任务，循环执行队列任务。
+- 第二种实现方式是每次查询最早的一条消息，判断这条信息的执行时间是否小于等于此刻的时间，如果是则执行此任务，否则继续循环检测。
+
+#### 定时任务
+通过开启 Keyspace Notifications 和 Pub/Sub 消息订阅的方式，可以拿到每个键值过期的事件，我们利用这个机制可以实现给每个人开启一个定时任务的功能
+
+#### 慢查询
+- slowlog-log-slower-than：用于设置慢查询的评定时间
+- slowlog-max-len：用来配置慢查询日志的最大记录数
+- 使用 slowlog show 来查询慢日志
+#### 提升 redis 速度
+1. 缩短键值对的存储长度；
+1. 使用 lazy free（延迟删除）特性；
+1. 设置键值的过期时间；
+1. 禁用耗时长的查询命令；
+1. 使用 slowlog 优化耗时命令；
+1. 使用 Pipeline 批量操作数据；
+1. 避免大量数据同时失效；
+1. 客户端使用优化；
+1. 限制 Redis 内存大小；
+1. 使用物理机而非虚拟机安装 Redis 服务；
+1. 检查数据持久化策略；
+1. 使用分布式架构来增加读写速度
+#### 数据量倾斜
+- bigkey
+- Slot 分配不均衡
+- Hash Tag 导致倾斜
 ```
 ```
