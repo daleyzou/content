@@ -9,3 +9,10 @@ https://www.wdbyte.com/java/rate-limiter/
 
 ### 保持一致性
 https://www.fanyilun.me/2024/01/07/%E7%BC%93%E5%AD%98%E4%B8%80%E8%87%B4%E6%80%A7%E7%9A%84%E5%87%A0%E7%A7%8D%E6%80%9D%E8%B7%AF/
+
+### Apollo
+https://www.apolloconfig.com/#/zh/design/apollo-design <br>
+https://www.iocoder.cn/categories/Apollo/
+
+### shardingspare
+https://shardingsphere.apache.org/document/current/cn/overview/ <br>
