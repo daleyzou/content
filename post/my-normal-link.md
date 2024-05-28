@@ -127,6 +127,8 @@ aList.remove(i--);// 索引回溯
 
 [volatile原理](https://zhuanlan.zhihu.com/p/77085695)
 
+[volatiole 作用](http://www.51gjie.com/java/574.html)
+
 [JVM内存模型](https://www.cnblogs.com/chenyangyao/p/5269622.html)
 
 [java8 ArrayList](https://zhuanlan.zhihu.com/p/34443888)
