@@ -186,4 +186,5 @@ NESTED：如果当前存在事务，则创建一个嵌套事务并在其中执�
 ### AQS 源码
 https://javadoop.com/post/AbstractQueuedSynchronizer
 
-
+### NEW 一个对象步骤
+https://blog.csdn.net/qq_44309181/article/details/111579069 <br>
