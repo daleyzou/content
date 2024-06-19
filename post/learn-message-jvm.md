@@ -21,6 +21,7 @@ Java 虚拟机会让不同的 @Contended 字段处于独立的缓存行中，因
 - 已加载类的静态变量；
 - JNI handles；
 - 已启动且未停止的 Java 线程
+- 新生代和老年代之间的引用关系， rememberSet / 卡表中记录“脏”的卡
 
 
 ## jvm 链接
@@ -79,7 +80,10 @@ pmap -x 2154  | sort -n -k3
 [Shenandoah 和 ZGC](https://realdaiwei.github.io/2021/06/27/garbage-collector-2/)
 
 [java 17 收集](https://huminxi.netlify.app/2022/07/06/java%208%20vs%20java%2017%20%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8/) <br>
-[G1 的三色标记法](https://blog.csdn.net/a141210104/article/details/126673800)
+[G1 的三色标记法](https://blog.csdn.net/a141210104/article/details/126673800) <br>
+[Shenandoah通过读屏障和"Brooks Pointers"解决并发回收](https://blog.csdn.net/weixin_45902285/article/details/121437457) <br>
+[ZGC](https://javabetter.cn/jvm/gc-collector.html#zgc) <br>
+
 
 ## 双亲委派机制及其打破情况
 [tomcat / spi](https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%20Java%20%E8%99%9A%E6%8B%9F%E6%9C%BA-%E5%AE%8C/03%20%E5%A4%A7%E5%8E%82%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%9A%E4%BB%8E%E8%A6%86%E7%9B%96%20JDK%20%E7%9A%84%E7%B1%BB%E5%BC%80%E5%A7%8B%E6%8E%8C%E6%8F%A1%E7%B1%BB%E7%9A%84%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6.md)
@@ -116,3 +120,7 @@ G1设置占用百分比
 关闭偏斜锁
 -XX:-UseBiasedLocking
 ```
+
+## 垃圾收集器
+- Shenandoah通过读屏障和"Brooks Pointers"解决并发回收
+- ZGC 是一款基于 Region 内存布局，(暂时)不设分代，使用读屏障、染色指针和内存多重映射等技术来实现的可并发的标记-整理算法的垃圾收集器。ZGC的Region其实被称为ZPage，具有动态性——动态创建和销毁，以及动态的区域容量大小
