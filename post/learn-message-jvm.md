@@ -83,6 +83,7 @@ pmap -x 2154  | sort -n -k3
 [G1 的三色标记法](https://blog.csdn.net/a141210104/article/details/126673800) <br>
 [Shenandoah通过读屏障和"Brooks Pointers"解决并发回收](https://blog.csdn.net/weixin_45902285/article/details/121437457) <br>
 [ZGC](https://javabetter.cn/jvm/gc-collector.html#zgc) <br>
+[ZGC 的染色指针](https://developer.aliyun.com/article/1097568)
 
 
 ## 双亲委派机制及其打破情况
