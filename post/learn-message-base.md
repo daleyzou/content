@@ -36,3 +36,6 @@ https://blog.csdn.net/Weixiaohuai/article/details/120853683
 管道（有名管道、无名管道）、消息队列、共享内存、信号量、信号、socket
 ##### 线程间通信
 信号量、信号、锁
+
+#### 代理模式和装饰模式的区别
+[区别](https://worktile.com/kb/ask/37725.html) <br>
