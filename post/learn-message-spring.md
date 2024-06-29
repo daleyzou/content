@@ -18,6 +18,8 @@ https://www.cnblogs.com/vipstone/p/16735893.html <br>
 1. Propagation.NEVER：以非事务方式运行，如果当前存在事务，则抛出异常。
 1. Propagation.NESTED：如果当前存在事务，则创建一个事务作为当前事务的嵌套事务来运行；如果当前没有事务，则该取值等价于 PROPAGATION_REQUIRED。
 
+Spring 中 Bean 的生命周期大致分为四个阶段：实例化（Instantiation）、属性赋值（Populate）、初始化（Initialization）、销毁（Destruction）
+
 ### BeanFactory an ApplicationContext
 在 Spring 中，基本容器 BeanFactory 和扩展容器 ApplicationContext 的实例化时机不太一样，BeanFactory 采用的是延迟初始化的方式，也就是说，只有在第一次 getBean() 获取 Bean 的时候，才会实例化 Bean。
 
