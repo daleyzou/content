@@ -23,6 +23,10 @@ https://www.cnblogs.com/vipstone/p/16735893.html <br>
 
 而 ApplicationContext 会在启动时预先创建并初始化所有的 Bean，并且包含了 BeanFactory 的所有功能，还增加了国际化支持、事件传播等功能。在 Spring Boot 项目中，一般使用的是 ApplicationContext。
 
+### threadLocal
+https://javabetter.cn/thread/ThreadLocal.html
+
+
 ### 附注
 spring、dubbo、mybatis、elasticsearch
 
