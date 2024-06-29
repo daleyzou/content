@@ -18,6 +18,10 @@ https://www.cnblogs.com/vipstone/p/16735893.html <br>
 1. Propagation.NEVER：以非事务方式运行，如果当前存在事务，则抛出异常。
 1. Propagation.NESTED：如果当前存在事务，则创建一个事务作为当前事务的嵌套事务来运行；如果当前没有事务，则该取值等价于 PROPAGATION_REQUIRED。
 
+### BeanFactory an ApplicationContext
+在 Spring 中，基本容器 BeanFactory 和扩展容器 ApplicationContext 的实例化时机不太一样，BeanFactory 采用的是延迟初始化的方式，也就是说，只有在第一次 getBean() 获取 Bean 的时候，才会实例化 Bean。
+
+而 ApplicationContext 会在启动时预先创建并初始化所有的 Bean，并且包含了 BeanFactory 的所有功能，还增加了国际化支持、事件传播等功能。在 Spring Boot 项目中，一般使用的是 ApplicationContext。
 
 ### 附注
 spring、dubbo、mybatis、elasticsearch
