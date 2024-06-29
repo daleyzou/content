@@ -28,6 +28,9 @@ Spring 中 Bean 的生命周期大致分为四个阶段：实例化（Instantiat
 ### threadLocal
 https://javabetter.cn/thread/ThreadLocal.html
 
+### @Autowired and @Resource
+https://www.cnblogs.com/think-in-java/p/5474740.html
+
 
 ### 附注
 spring、dubbo、mybatis、elasticsearch
