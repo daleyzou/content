@@ -39,3 +39,7 @@ https://blog.csdn.net/Weixiaohuai/article/details/120853683
 
 #### 代理模式和装饰模式的区别
 [区别](https://worktile.com/kb/ask/37725.html) <br>
+
+#### tcp 三次握手、四次挥手
+https://xiaolincoding.com/network/3_tcp/tcp_interview.html <br>
+
