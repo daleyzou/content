@@ -43,3 +43,5 @@ https://blog.csdn.net/Weixiaohuai/article/details/120853683
 #### tcp 三次握手、四次挥手
 https://xiaolincoding.com/network/3_tcp/tcp_interview.html <br>
 
+#### netty 导致的 close_wait 问题
+[链接](https://mp.weixin.qq.com/s?__biz=MzU3Njk0MTc3Ng==&mid=2247486020&idx=1&sn=f7cf41aec28e2e10a46228a64b1c0a5c&scene=21#wechat_redirect)
