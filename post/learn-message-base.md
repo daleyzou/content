@@ -21,6 +21,12 @@ time_wait作用
 防止前一个连接上延迟的数据包或者丢失重传的数据包，被后面复用的连接错误的接收
 确保连接方能在时间范围内，关闭自己的连接
 为了保证客户端发送的最后一个ACK 报文能够到达服务器
+
+tcp_tw_reuse 的作用是让客户端快速复用处于 TIME_WAIT 状态的端口，相当于跳过了 TIME_WAIT 状态，这可能会出现这样的两个问题：
+
+历史 RST 报文可能会终止后面相同四元组的连接，因为 PAWS 检查到即使 RST 是过期的，也不会丢弃。
+如果第四次挥手的 ACK 报文丢失了，有可能被动关闭连接的一方不能被正常的关闭;
+虽然 TIME_WAIT 状态持续的时间是有一点长，显得很不友好，但是它被设计来就是用来避免发生乱七八糟的事情。
 ```
 #### 分布式协议
 Raft ，包括 Leader、Follower、Candidate 三种节点类型，哨兵在正常运行时并不像 Raft 协议那样区分了三种节点类型，而是所有哨兵都是对等的。而当哨兵发现主节点故障，要执行故障切换时，会按照 Raft 协议中 Leader 选举的规则，进行投票选出 Leader
@@ -43,5 +49,10 @@ https://blog.csdn.net/Weixiaohuai/article/details/120853683
 #### tcp 三次握手、四次挥手
 https://xiaolincoding.com/network/3_tcp/tcp_interview.html <br>
 
+#### 常用命令
+```
+ss -lnt // 查看 accept （全连接队列的大小）
+```
+  
 #### netty 导致的 close_wait 问题
 [链接](https://mp.weixin.qq.com/s?__biz=MzU3Njk0MTc3Ng==&mid=2247486020&idx=1&sn=f7cf41aec28e2e10a46228a64b1c0a5c&scene=21#wechat_redirect)
