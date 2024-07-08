@@ -56,3 +56,11 @@ ss -lnt // 查看 accept （全连接队列的大小）
   
 #### netty 导致的 close_wait 问题
 [链接](https://mp.weixin.qq.com/s?__biz=MzU3Njk0MTc3Ng==&mid=2247486020&idx=1&sn=f7cf41aec28e2e10a46228a64b1c0a5c&scene=21#wechat_redirect)
+
+#### tcp 的问题
+1. 升级 tcp 的工作很困难
+1. tcp 三次握手的时延
+2. 存在队头阻塞的问题
+3. 网络迁移需要重新建立连接
+
+
