@@ -75,4 +75,8 @@ $ netstat -napt
 tcp  192.168.110.182.64992   117.147.199.51.443     ESTABLISHED
 ```
 
+#### TCP 特殊情况
+在只 bind 没有 listen 时，客户端发送 syn 后会直接收到 rst。 在客户端和自己建立连接、两个客户端同时发起连接时可以在没有listen的情况下成功建立连接 <br>
+[同时发送 syn，同时发送 fin](https://blog.csdn.net/m_buddy/article/details/74332423) <br>
+
 
