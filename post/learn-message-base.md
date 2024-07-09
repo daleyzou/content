@@ -52,6 +52,8 @@ https://xiaolincoding.com/network/3_tcp/tcp_interview.html <br>
 #### 常用命令
 ```
 ss -lnt // 查看 accept （全连接队列的大小）
+
+# watch -d 'netstat -s | grep overflowed'
 ```
   
 #### netty 导致的 close_wait 问题
