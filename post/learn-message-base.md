@@ -54,6 +54,9 @@ https://xiaolincoding.com/network/3_tcp/tcp_interview.html <br>
 ss -lnt // 查看 accept （全连接队列的大小）
 
 # watch -d 'netstat -s | grep overflowed'
+
+ping
+mtr
 ```
   
 #### netty 导致的 close_wait 问题
@@ -82,3 +85,5 @@ tcp  192.168.110.182.64992   117.147.199.51.443     ESTABLISHED
 [同时发送 syn，同时发送 fin](https://blog.csdn.net/m_buddy/article/details/74332423) <br>
 
 
+#### TCP 抓包工具
+tcpdump / wireshark
