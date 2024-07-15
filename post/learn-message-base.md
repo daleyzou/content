@@ -88,3 +88,6 @@ tcp  192.168.110.182.64992   117.147.199.51.443     ESTABLISHED
 
 #### TCP 抓包工具
 tcpdump / wireshark
+
+#### 大数的处理，分而治之的思想
+[TOP N 数据的处理](https://blog.nowcoder.net/n/ef169f7ca52549cca91aa50bb1473e7c)
