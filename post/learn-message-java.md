@@ -188,3 +188,7 @@ https://javadoop.com/post/AbstractQueuedSynchronizer
 
 ### NEW 一个对象步骤
 https://blog.csdn.net/qq_44309181/article/details/111579069 <br>
+
+### ReentrantLock 
+[实现原理](https://juejin.cn/post/6844903805683761165) <br>
+
