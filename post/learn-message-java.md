@@ -192,3 +192,11 @@ https://blog.csdn.net/qq_44309181/article/details/111579069 <br>
 ### ReentrantLock 
 [实现原理](https://juejin.cn/post/6844903805683761165) <br>
 
+reentrantlock 等待队列为啥使用空的head节点 <br>
+1. 简化逻辑
+2. 减少条件判断
+3. 提高性能
+4. 便于实现 FIFO
+
+### 实现线程同步的方式
+
