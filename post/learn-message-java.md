@@ -191,6 +191,9 @@ https://blog.csdn.net/qq_44309181/article/details/111579069 <br>
 
 ### ReentrantLock 
 [实现原理](https://juejin.cn/post/6844903805683761165) <br>
+[源码解析](https://tech.meituan.com/2019/12/05/aqs-theory-and-apply.html) <br>
+
+双向链表中，第一个节点为虚节点，其实并不存储任何信息，只是占位。真正的第一个有数据的节点，是在第二个节点开始的
 
 reentrantlock 等待队列为啥使用空的head节点 <br>
 1. 简化逻辑
