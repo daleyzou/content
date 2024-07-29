@@ -75,6 +75,7 @@ mtr
 3. 在应用层做控制，基于连接ID做通道复用，而不是tcp四元组 
 
 #### 查看 TCP 连接情况
+https://blog.csdn.net/pony12/article/details/115747776 <br> 
 ```
 $ netstat -napt
 协议  源ip地址:端口            目的ip地址：端口         状态
