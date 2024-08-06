@@ -202,4 +202,16 @@ reentrantlock 等待队列为啥使用空的head节点 <br>
 4. 便于实现 FIFO
 
 ### 实现线程同步的方式
+1. ReentrantLock condition的 await signl 方式
+1. Synchronized  new Object().wait notify 方式
+1. AtomicInteger 的cas方式
+2. Thread.join方式
+3. CyclickBarrier
+4. CountDownLatch
+5. Semaphere 信号量的机制
+6. Thread sleep 的方式
 
+
+
+### 对象引用
+https://cloud.tencent.com/developer/article/1953573
