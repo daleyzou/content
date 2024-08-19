@@ -215,3 +215,7 @@ reentrantlock 等待队列为啥使用空的head节点 <br>
 
 ### 对象引用
 https://cloud.tencent.com/developer/article/1953573
+
+### 一些链接
+https://javabetter.cn/home.html  <br>
+
