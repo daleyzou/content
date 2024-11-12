@@ -212,8 +212,8 @@ reentrantlock 等待队列为啥使用空的head节点 <br>
 6. Thread sleep 的方式
 
 ### 精度丢失
-https://blog.csdn.net/wangxufa/article/details/121722126 <br>
-计算机如何保存小数：
+BigDecimal： https://blog.csdn.net/wangxufa/article/details/121722126 <br>
+计算机如何保存小数：http://kaito-kidd.com/2018/08/08/computer-system-float-point/ <br>
 
 ### 对象引用
 https://cloud.tencent.com/developer/article/1953573
