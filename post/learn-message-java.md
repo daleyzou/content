@@ -205,6 +205,9 @@ reentrantlock 等待队列为啥使用空的head节点 <br>
 3. 提高性能
 4. 便于实现 FIFO
 
+### threadLocal
+[使用弱引用](https://blog.csdn.net/qq_44391293/article/details/141429344)
+
 ### 实现线程同步的方式
 1. ReentrantLock condition的 await signl 方式
 1. Synchronized  new Object().wait notify 方式
