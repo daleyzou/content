@@ -45,7 +45,7 @@ Java线程有以下几种状态：
 线程池中比较常用的是 3 种阻塞队列
 - 即 LinkedBlockingQueue、SynchronousQueue、DelayedWorkQueue
 
-[ThreadPoolExecutor 线程池 线程异常，会移除异常的，新增一个新的](https://www.cnblogs.com/fanguangdexiaoyuer/p/12332082.html)
+[ThreadPoolExecutor 线程池 线程异常，会移除异常的，新增一个新的](https://www.cnblogs.com/fanguangdexiaoyuer/p/12332082.html) submit 不会抛出异常 需要借助 future.get 来捕获异常， execute 会直接抛出异常
 
 ### 知识点
 [tomcat是如何打破双亲委派机制的](https://developer.aliyun.com/article/1081332)
