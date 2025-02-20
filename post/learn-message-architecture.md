@@ -16,3 +16,9 @@ https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/%E9%AB%98%E5%B9%B6%E5%8F%91%E
 
 https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/%E9%AB%98%E5%B9%B6%E5%8F%91%E7%B3%BB%E7%BB%9F%E5%AE%9E%E6%88%98%E8%AF%BE
 
+
+## DDD 领域驱动设计
+传统的三层架构，  controller 、 service 、 dao  <br/>
+领域驱动设计分为 应用层、基础设施层、外部接口、领域层 <br/>
+六边形架构，整洁架构还是洋葱架构 <br/>
+https://tech.meituan.com/2024/05/27/ddd-in-business.html
