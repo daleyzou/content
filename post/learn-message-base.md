@@ -36,6 +36,10 @@ Paxos
 
 Raft
 
+#### 分布式事务
+两阶段提交   三阶段提交
+
+Percolator 乐观事务 
 
 #### 链接
 https://www.hzhr.cc/wap/c_article-a_show-id_33709.html <br>
