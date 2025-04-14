@@ -101,3 +101,6 @@ tcpdump / wireshark
 
 #### 大数的处理，分而治之的思想
 [TOP N 数据的处理](https://blog.nowcoder.net/n/ef169f7ca52549cca91aa50bb1473e7c)
+
+#### CPU 内存 磁盘的关系
+https://www.cnblogs.com/codecheng99/p/12386110.html
