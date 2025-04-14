@@ -34,7 +34,16 @@ https://www.cnblogs.com/think-in-java/p/5474740.html <br>
 当两个注解都存在时， 因为 先执行的 CommonAnnotationBeanPostProcessor会完成属性注入，后执行的AutowiredAnnotationBeanPostProcessor， 不会覆盖，[所以 @Resource 会生效](https://www.cnblogs.com/ibigboy/p/16501592.html)
 
 ### spring boot  VS  spring cloud  
+https://refblogs.com/article/633 <br>
 
+### Akka vs springboot
+https://blog.51cto.com/u_16175514/12624615 <br>
+
+### 响应式编程
+https://potoyang.gitbook.io/spring-in-action-v5/di-10-zhang-reactor-jie-shao/10.1-li-jie-xiang-ying-shi-bian-cheng
+
+### 底层容器 Tomcat 和 Netty
+https://blog.csdn.net/zhangzehai2234/article/details/135175994 <br>
 
 
 ### 附注
