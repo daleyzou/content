@@ -229,6 +229,10 @@ BigDecimal： https://blog.csdn.net/wangxufa/article/details/121722126 <br>
 ### 对象引用
 https://cloud.tencent.com/developer/article/1953573
 
+### 线程安全
+ConcurrentHashMap 的 get 没有加锁， 核心的 node 数组等使用 volatile 修饰   https://blog.csdn.net/Saintmm/article/details/121281918   <br>
+
+
 ### 一些链接
 https://javabetter.cn/home.html  <br>
 
