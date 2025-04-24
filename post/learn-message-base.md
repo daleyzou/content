@@ -34,6 +34,7 @@ Raft ，包括 Leader、Follower、Candidate 三种节点类型，哨兵在正�
 
 Paxos
 
+
 Raft
 
 #### 分布式事务
