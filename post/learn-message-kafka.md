@@ -33,3 +33,11 @@ Broker端参数replica.lag.time.max.ms参数值。这个参数的含义是Follow
 问题：Follower副本的高水位更新需要一轮额外的拉取请求才能实现 <br>
 记录当前 leader 的版本 、leo 起始值 <br>
 
+
+#### 分区有什么好处
+- 实现负载均衡，避免单个Broker上的负载过高
+- 实现消息的备份，从而保证系统的高可靠
+
+#### kafka中如何确定那个消费者消费那个分区
+- 当消费者加入或离开消费者组时，会触发重新平衡（Rebalance）
+- 分区的分配策略主要有几种：Range、Round Robin、Sticky等
