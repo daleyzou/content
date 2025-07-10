@@ -228,6 +228,7 @@ CountDownLatch.await() 使用的是共享Node
 4. CountDownLatch
 5. Semaphere 信号量的机制
 6. Thread sleep 的方式
+7. 使用阻塞队列的方式
 
 ### 精度丢失
 BigDecimal： https://blog.csdn.net/wangxufa/article/details/121722126 <br>
