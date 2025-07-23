@@ -34,7 +34,16 @@ Java线程有以下几种状态：
 
 [LongAdder解析](https://juejin.cn/post/7103872764984950797)
 
-[volatile 关键字作用](http://www.51gjie.com/java/574.html)
+
+### volatile
+[volatile 关键字作用](http://www.51gjie.com/java/574.html) <br>
+JVM 层：volatile 变量会被加上两个内存屏障指令：  <br>
+store 屏障（storestore） → 把工作内存刷新到主内存<br>
+load 屏障（loadload） → 从主内存重新读取变量值<br>
+
+CPU 层：缓存一致性（MESI 协议）
+
+
 
 
 ### 线程池
