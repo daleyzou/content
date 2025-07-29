@@ -86,8 +86,9 @@ https://blog.csdn.net/Weixiaohuai/article/details/120853683
 ##### 线程间通信
 信号量、信号、锁
 
-#### 代理模式和装饰模式的区别
-[区别](https://worktile.com/kb/ask/37725.html) <br>
+#### 设计模式
+代理模式和装饰模式的区别 [区别](https://worktile.com/kb/ask/37725.html) <br>
+为什么要使用工厂模式：隐藏创建细节、降低耦合、增强扩展性 <br>
 
 #### tcp 三次握手、四次挥手
 https://xiaolincoding.com/network/3_tcp/tcp_interview.html <br>
