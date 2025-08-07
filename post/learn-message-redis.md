@@ -205,3 +205,7 @@ Gossip 消息大小、 实例间通信频率
 - Hash Tag 导致倾斜
 ```
 ```
+
+#### ZSET 在仓库场景的使用
+  - 场景: 紧急出库单处理、根据拣货员效率排名、按商品保质期先后（FEFO, First Expire First Out）进行补货推荐。
+  - 深度解析: ZSET的每个成员都有一个score（分数）。这个score提供了强大的排序能力。对于紧急订单，score可以是紧急程度（99 > 90）。对于FEFO，score可以是过期日期的Unix时间戳。通过ZRANGE/ZREVRANGE可以高效地获取Top N数据，这是LIST结构无法比拟的
