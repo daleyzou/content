@@ -253,3 +253,13 @@ ConcurrentHashMap 的 get 没有加锁， 核心的 node 数组等使用 volatil
 ### 一些链接
 https://javabetter.cn/home.html  <br>
 
+
+### Java VS Python
+- 执行模型与性能瓶颈
+- 并发模型与多核利用率
+- 内存管理与 GC 策略
+- 工程化与类型系统
+
+  ### 协程
+  
+
