@@ -16,3 +16,10 @@ https://www.iocoder.cn/categories/Apollo/
 
 ### shardingspare
 https://shardingsphere.apache.org/document/current/cn/overview/ <br>
+
+### 项目信息
+曼哈顿距离判断远近 <br>
+使用 A* 算法查找可达路径 <br>
+图的深度优先搜索、图的广度优先搜索 <br>
+
+
