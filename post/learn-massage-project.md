@@ -22,4 +22,9 @@ https://shardingsphere.apache.org/document/current/cn/overview/ <br>
 使用 A* 算法查找可达路径 <br>
 图的深度优先搜索、图的广度优先搜索 <br>
 
+查找消耗使用 曼哈顿距离 <br>
+Dijkstra 算法 是图论中最经典的单源最短路径算法 <br>
+网络流算法  最小成本最大流 贪心算法 <br>
+
+
 
