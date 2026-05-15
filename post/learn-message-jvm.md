@@ -129,3 +129,7 @@ G1设置占用百分比
 
 ## JVM 的 ZGC 是如何实现近乎零延迟回收的
 
+## 对象在“整理”过程中，JVM 是如何处理那些指向被移动对象的指针的
+Shenandoah 收集器使用了 转发指针 (Brooks Pointers)（对象头） 来实现并发压缩 <br>
+着色指针 (Colored Pointers) 和 读屏障 (Load Barriers)  （访问时修复自愈 + 下一次GC的并发标记阶段修复）<br>
+
