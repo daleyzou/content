@@ -23,6 +23,38 @@ Java 虚拟机会让不同的 @Contended 字段处于独立的缓存行中，因
 - 已启动且未停止的 Java 线程
 - 新生代和老年代之间的引用关系， rememberSet / 卡表中记录“脏”的卡
 
+GC Roots 的完整清单
+1. 虚拟机栈中的引用（最常见）
+每个线程都有自己的虚拟机栈，栈帧里的局部变量表存着对象引用。只要方法还没返回，这个引用就是活的。
+javavoid foo() {
+    Object obj = new Object(); // obj 在栈帧里，是 GC Root
+    // 方法还没返回，obj 引用的对象不能被回收
+}
+2. 本地方法栈中的引用（JNI）
+线程通过 JNI 调用 native 方法时，native 代码里持有的 Java 对象引用（jobject、jclass 等）也是 GC Root。
+3. 方法区中的静态变量
+类的静态字段如果引用了对象，这个引用就是 GC Root，生命周期跟类一样长。
+javaclass Foo {
+    static Object singleton = new Object(); // GC Root，类不卸载就不回收
+}
+4. 方法区中的常量引用
+字符串常量池、static final 引用的对象。
+javastatic final String NAME = "hello"; // 常量池里的引用，是 GC Root
+5. 被 synchronized 锁住的对象
+一个对象正在被 synchronized 持有，说明有线程正在用它，不能回收。
+javasynchronized (lockObj) {
+    // lockObj 此时是 GC Root
+}
+6. JVM 内部引用
+这类很容易漏答：
+
+基本数据类型对应的 Class 对象：int.class、boolean.class 等，由 JVM 内部持有
+常驻异常对象：NullPointerException、OutOfMemoryError 等，JVM 预先分配好的，不能被回收
+类加载器：系统类加载器本身是 GC Root
+
+7. 跨代引用（G1 / 分代收集器特有）
+这个是加分项，很多人不知道。
+做 Young GC 时，老年代对象引用了年轻代对象，这个老年代对象也会被当作临时的 GC Root（通过 RSet 或 Card Table 找到）。不是传统意义上的 Root，但在局部回收时起到相同的作用。
 
 ## jvm 链接
 -  https://learn.lianglianglee.com/%E4%B8%93%E6%A0%8F/JVM%20%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%2032%20%E8%AE%B2%EF%BC%88%E5%AE%8C%EF%BC%89/13%20%E5%B8%B8%E8%A7%81%E7%9A%84%20GC%20%E7%AE%97%E6%B3%95%EF%BC%88GC%20%E7%9A%84%E8%83%8C%E6%99%AF%E4%B8%8E%E5%8E%9F%E7%90%86%EF%BC%89.md
